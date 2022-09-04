@@ -1,0 +1,1315 @@
+00:10:18.384 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Starting SmartDormitoryRepairApplication on DESKTOP-I1M4IDV with PID 7760 (E:\IdeaProjects\smart_dormitory_repair\target\classes started by 18417 in E:\IdeaProjects\smart_dormitory_repair)
+00:10:18.387 [main] INFO  c.t.s.SmartDormitoryRepairApplication - No active profile set, falling back to default profiles: default
+00:10:19.357 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:10:19.562 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+00:10:19.571 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+00:10:19.571 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+00:10:19.572 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+00:10:19.573 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+00:10:19.573 [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+00:10:19.573 [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+00:10:19.576 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+00:10:19.652 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+00:10:19.653 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1209 ms
+00:10:20.917 [main] INFO  c.t.s.config.ExecutorServiceConfig - 初始化线程池, 核心线程数量: 8, 最大线程数量: 16, 允许线程空闲时间: 60, 缓冲队列大小: 200
+00:10:20.932 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+00:10:21.165 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+00:10:21.180 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+00:10:21.210 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+00:10:21.394 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+00:10:21.415 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path ''
+00:10:21.417 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Started SmartDormitoryRepairApplication in 3.394 seconds (JVM running for 4.501)
+00:10:21.419 [main] INFO  c.t.s.SmartDormitoryRepairApplication - smart-dormitory启动完成, 耗时: 3479毫秒, swagger地址: http://localhost:8086/swagger-ui.html
+00:10:31.586 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+00:10:31.586 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+00:10:31.592 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+00:12:51.272 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Starting SmartDormitoryRepairApplication on DESKTOP-I1M4IDV with PID 17356 (E:\IdeaProjects\smart_dormitory_repair\target\classes started by 18417 in E:\IdeaProjects\smart_dormitory_repair)
+00:12:51.275 [main] INFO  c.t.s.SmartDormitoryRepairApplication - No active profile set, falling back to default profiles: default
+00:12:52.297 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:12:52.463 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+00:12:52.470 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+00:12:52.470 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+00:12:52.470 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+00:12:52.471 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+00:12:52.472 [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+00:12:52.472 [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+00:12:52.473 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+00:12:52.543 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+00:12:52.544 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1198 ms
+00:12:53.986 [main] INFO  c.t.s.config.ExecutorServiceConfig - 初始化线程池, 核心线程数量: 8, 最大线程数量: 16, 允许线程空闲时间: 60, 缓冲队列大小: 200
+00:12:54.001 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+00:12:54.214 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+00:12:54.226 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+00:12:54.251 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+00:12:54.453 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+00:12:54.472 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path ''
+00:12:54.475 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Started SmartDormitoryRepairApplication in 3.571 seconds (JVM running for 4.858)
+00:12:54.476 [main] INFO  c.t.s.SmartDormitoryRepairApplication - smart-dormitory启动完成, 耗时: 3679毫秒, swagger地址: http://localhost:8086/swagger-ui.html
+00:12:57.295 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+00:12:57.296 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+00:12:57.303 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+00:15:15.452 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Starting SmartDormitoryRepairApplication on DESKTOP-I1M4IDV with PID 5908 (E:\IdeaProjects\smart_dormitory_repair\target\classes started by 18417 in E:\IdeaProjects\smart_dormitory_repair)
+00:15:15.455 [main] INFO  c.t.s.SmartDormitoryRepairApplication - No active profile set, falling back to default profiles: default
+00:15:16.355 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:15:16.521 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+00:15:16.527 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+00:15:16.527 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+00:15:16.527 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+00:15:16.528 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+00:15:16.529 [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+00:15:16.529 [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+00:15:16.531 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+00:15:16.601 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+00:15:16.601 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1101 ms
+00:15:17.829 [main] INFO  c.t.s.config.ExecutorServiceConfig - 初始化线程池, 核心线程数量: 8, 最大线程数量: 16, 允许线程空闲时间: 60, 缓冲队列大小: 200
+00:15:17.844 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+00:15:18.049 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+00:15:18.059 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+00:15:18.085 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+00:15:18.269 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+00:15:18.288 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path ''
+00:15:18.290 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Started SmartDormitoryRepairApplication in 3.153 seconds (JVM running for 4.155)
+00:15:18.291 [main] INFO  c.t.s.SmartDormitoryRepairApplication - smart-dormitory启动完成, 耗时: 3227毫秒, swagger地址: http://localhost:8086/swagger-ui.html
+00:15:23.957 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+00:15:23.957 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+00:15:23.963 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+01:10:13.579 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Starting SmartDormitoryRepairApplication on DESKTOP-I1M4IDV with PID 396 (E:\IdeaProjects\smart_dormitory_repair\target\classes started by 18417 in E:\IdeaProjects\smart_dormitory_repair)
+01:10:13.582 [main] INFO  c.t.s.SmartDormitoryRepairApplication - No active profile set, falling back to default profiles: default
+01:10:14.517 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:10:14.693 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+01:10:14.699 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+01:10:14.699 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+01:10:14.699 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+01:10:14.700 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+01:10:14.701 [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+01:10:14.701 [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+01:10:14.703 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+01:10:14.773 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+01:10:14.773 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1142 ms
+01:10:16.101 [main] INFO  c.t.s.config.ExecutorServiceConfig - 初始化线程池, 核心线程数量: 8, 最大线程数量: 16, 允许线程空闲时间: 60, 缓冲队列大小: 200
+01:10:16.115 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+01:10:16.349 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+01:10:16.359 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+01:10:16.385 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+01:10:16.569 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+01:10:16.590 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path ''
+01:10:16.592 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Started SmartDormitoryRepairApplication in 3.329 seconds (JVM running for 4.333)
+01:10:16.594 [main] INFO  c.t.s.SmartDormitoryRepairApplication - smart-dormitory启动完成, 耗时: 3407毫秒, swagger地址: http://localhost:8086/swagger-ui.html
+01:11:12.195 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+01:11:12.195 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+01:11:12.201 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+01:16:00.436 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Starting SmartDormitoryRepairApplication on DESKTOP-I1M4IDV with PID 19196 (E:\IdeaProjects\smart_dormitory_repair\target\classes started by 18417 in E:\IdeaProjects\smart_dormitory_repair)
+01:16:00.438 [main] INFO  c.t.s.SmartDormitoryRepairApplication - No active profile set, falling back to default profiles: default
+01:16:01.363 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:16:01.528 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+01:16:01.535 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+01:16:01.535 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+01:16:01.536 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+01:16:01.537 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+01:16:01.537 [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+01:16:01.537 [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+01:16:01.540 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+01:16:01.607 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+01:16:01.607 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1119 ms
+01:16:02.813 [main] INFO  c.t.s.config.ExecutorServiceConfig - 初始化线程池, 核心线程数量: 8, 最大线程数量: 16, 允许线程空闲时间: 60, 缓冲队列大小: 200
+01:16:02.827 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+01:16:03.027 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+01:16:03.037 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+01:16:03.063 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+01:16:03.247 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+01:16:03.266 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path ''
+01:16:03.268 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Started SmartDormitoryRepairApplication in 3.145 seconds (JVM running for 4.148)
+01:16:03.270 [main] INFO  c.t.s.SmartDormitoryRepairApplication - smart-dormitory启动完成, 耗时: 3220毫秒, swagger地址: http://localhost:8086/swagger-ui.html
+01:16:37.629 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+01:16:37.630 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+01:16:37.636 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+01:16:37.692 [http-nio-8086-exec-1] INFO  c.t.s.util.QRCodeUtil - 生成二维码成功！
+01:17:00.801 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Starting SmartDormitoryRepairApplication on DESKTOP-I1M4IDV with PID 12088 (E:\IdeaProjects\smart_dormitory_repair\target\classes started by 18417 in E:\IdeaProjects\smart_dormitory_repair)
+01:17:00.805 [main] INFO  c.t.s.SmartDormitoryRepairApplication - No active profile set, falling back to default profiles: default
+01:17:02.146 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:17:02.337 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+01:17:02.343 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+01:17:02.343 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+01:17:02.343 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+01:17:02.344 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+01:17:02.345 [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+01:17:02.345 [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+01:17:02.348 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+01:17:02.420 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+01:17:02.420 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1557 ms
+01:17:03.730 [main] INFO  c.t.s.config.ExecutorServiceConfig - 初始化线程池, 核心线程数量: 8, 最大线程数量: 16, 允许线程空闲时间: 60, 缓冲队列大小: 200
+01:17:03.745 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+01:17:03.942 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+01:17:03.955 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+01:17:03.986 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+01:17:04.161 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+01:17:04.183 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path ''
+01:17:04.186 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Started SmartDormitoryRepairApplication in 3.726 seconds (JVM running for 4.779)
+01:17:04.188 [main] INFO  c.t.s.SmartDormitoryRepairApplication - smart-dormitory启动完成, 耗时: 3805毫秒, swagger地址: http://localhost:8086/swagger-ui.html
+01:19:47.169 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Starting SmartDormitoryRepairApplication on DESKTOP-I1M4IDV with PID 19424 (E:\IdeaProjects\smart_dormitory_repair\target\classes started by 18417 in E:\IdeaProjects\smart_dormitory_repair)
+01:19:47.172 [main] INFO  c.t.s.SmartDormitoryRepairApplication - No active profile set, falling back to default profiles: default
+01:19:48.085 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:19:48.260 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+01:19:48.268 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+01:19:48.268 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+01:19:48.268 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+01:19:48.269 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+01:19:48.270 [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+01:19:48.270 [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+01:19:48.272 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+01:19:48.348 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+01:19:48.348 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1136 ms
+01:19:49.571 [main] INFO  c.t.s.config.ExecutorServiceConfig - 初始化线程池, 核心线程数量: 8, 最大线程数量: 16, 允许线程空闲时间: 60, 缓冲队列大小: 200
+01:19:49.586 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+01:19:49.779 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+01:19:49.790 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+01:19:49.815 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+01:19:49.988 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+01:19:50.008 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path ''
+01:19:50.011 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Started SmartDormitoryRepairApplication in 3.16 seconds (JVM running for 4.197)
+01:19:50.012 [main] INFO  c.t.s.SmartDormitoryRepairApplication - smart-dormitory启动完成, 耗时: 3247毫秒, swagger地址: http://localhost:8086/swagger-ui.html
+01:19:54.750 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+01:19:54.750 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+01:19:54.757 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+01:26:29.023 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Starting SmartDormitoryRepairApplication on DESKTOP-I1M4IDV with PID 11040 (E:\IdeaProjects\smart_dormitory_repair\target\classes started by 18417 in E:\IdeaProjects\smart_dormitory_repair)
+01:26:29.026 [main] INFO  c.t.s.SmartDormitoryRepairApplication - No active profile set, falling back to default profiles: default
+01:26:29.959 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:26:30.127 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+01:26:30.133 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+01:26:30.134 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+01:26:30.134 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+01:26:30.135 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+01:26:30.136 [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+01:26:30.136 [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+01:26:30.139 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+01:26:30.208 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+01:26:30.209 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1129 ms
+01:26:31.410 [main] INFO  c.t.s.config.ExecutorServiceConfig - 初始化线程池, 核心线程数量: 8, 最大线程数量: 16, 允许线程空闲时间: 60, 缓冲队列大小: 200
+01:26:31.424 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+01:26:31.626 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+01:26:31.637 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+01:26:31.662 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+01:26:31.845 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+01:26:31.865 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path ''
+01:26:31.867 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Started SmartDormitoryRepairApplication in 3.143 seconds (JVM running for 4.17)
+01:26:31.868 [main] INFO  c.t.s.SmartDormitoryRepairApplication - smart-dormitory启动完成, 耗时: 3226毫秒, swagger地址: http://localhost:8086/swagger-ui.html
+01:26:40.402 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+01:26:40.402 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+01:26:40.408 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+01:27:26.171 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Starting SmartDormitoryRepairApplication on DESKTOP-I1M4IDV with PID 2560 (E:\IdeaProjects\smart_dormitory_repair\target\classes started by 18417 in E:\IdeaProjects\smart_dormitory_repair)
+01:27:26.174 [main] INFO  c.t.s.SmartDormitoryRepairApplication - No active profile set, falling back to default profiles: default
+01:27:27.097 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:27:27.265 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+01:27:27.271 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+01:27:27.272 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+01:27:27.272 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+01:27:27.273 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+01:27:27.274 [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+01:27:27.274 [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+01:27:27.276 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+01:27:27.349 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+01:27:27.350 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1128 ms
+01:27:28.573 [main] INFO  c.t.s.config.ExecutorServiceConfig - 初始化线程池, 核心线程数量: 8, 最大线程数量: 16, 允许线程空闲时间: 60, 缓冲队列大小: 200
+01:27:28.588 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+01:27:28.801 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+01:27:28.812 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+01:27:28.837 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+01:27:29.028 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+01:27:29.048 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path ''
+01:27:29.051 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Started SmartDormitoryRepairApplication in 3.197 seconds (JVM running for 4.186)
+01:27:29.052 [main] INFO  c.t.s.SmartDormitoryRepairApplication - smart-dormitory启动完成, 耗时: 3272毫秒, swagger地址: http://localhost:8086/swagger-ui.html
+01:27:35.945 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+01:27:35.945 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+01:27:35.951 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+01:28:48.672 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Starting SmartDormitoryRepairApplication on DESKTOP-I1M4IDV with PID 16244 (E:\IdeaProjects\smart_dormitory_repair\target\classes started by 18417 in E:\IdeaProjects\smart_dormitory_repair)
+01:28:48.675 [main] INFO  c.t.s.SmartDormitoryRepairApplication - No active profile set, falling back to default profiles: default
+01:28:49.593 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:28:49.761 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+01:28:49.767 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+01:28:49.768 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+01:28:49.768 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+01:28:49.769 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+01:28:49.769 [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+01:28:49.769 [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+01:28:49.773 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+01:28:49.844 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+01:28:49.844 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1125 ms
+01:28:51.059 [main] INFO  c.t.s.config.ExecutorServiceConfig - 初始化线程池, 核心线程数量: 8, 最大线程数量: 16, 允许线程空闲时间: 60, 缓冲队列大小: 200
+01:28:51.073 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+01:28:51.273 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+01:28:51.284 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+01:28:51.309 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+01:28:51.494 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+01:28:51.512 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path ''
+01:28:51.515 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Started SmartDormitoryRepairApplication in 3.155 seconds (JVM running for 4.165)
+01:28:51.516 [main] INFO  c.t.s.SmartDormitoryRepairApplication - smart-dormitory启动完成, 耗时: 3232毫秒, swagger地址: http://localhost:8086/swagger-ui.html
+01:29:00.217 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+01:29:00.218 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+01:29:00.223 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+01:29:00.350 [http-nio-8086-exec-1] INFO  c.t.s.c.SmartLoginController - 保存结果: false
+01:29:14.494 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Starting SmartDormitoryRepairApplication on DESKTOP-I1M4IDV with PID 1300 (E:\IdeaProjects\smart_dormitory_repair\target\classes started by 18417 in E:\IdeaProjects\smart_dormitory_repair)
+01:29:14.497 [main] INFO  c.t.s.SmartDormitoryRepairApplication - No active profile set, falling back to default profiles: default
+01:29:15.426 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:29:15.591 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+01:29:15.599 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+01:29:15.599 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+01:29:15.599 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+01:29:15.600 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+01:29:15.601 [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+01:29:15.601 [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+01:29:15.603 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+01:29:15.671 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+01:29:15.671 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1124 ms
+01:29:16.875 [main] INFO  c.t.s.config.ExecutorServiceConfig - 初始化线程池, 核心线程数量: 8, 最大线程数量: 16, 允许线程空闲时间: 60, 缓冲队列大小: 200
+01:29:16.889 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+01:29:17.095 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+01:29:17.106 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+01:29:17.129 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+01:29:17.314 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+01:29:17.333 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path ''
+01:29:17.335 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Started SmartDormitoryRepairApplication in 3.147 seconds (JVM running for 4.162)
+01:29:17.337 [main] INFO  c.t.s.SmartDormitoryRepairApplication - smart-dormitory启动完成, 耗时: 3228毫秒, swagger地址: http://localhost:8086/swagger-ui.html
+01:29:21.173 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+01:29:21.174 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+01:29:21.179 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+01:29:21.383 [http-nio-8086-exec-1] INFO  c.t.s.c.SmartLoginController - 保存结果: true
+01:29:45.822 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Starting SmartDormitoryRepairApplication on DESKTOP-I1M4IDV with PID 17880 (E:\IdeaProjects\smart_dormitory_repair\target\classes started by 18417 in E:\IdeaProjects\smart_dormitory_repair)
+01:29:45.825 [main] INFO  c.t.s.SmartDormitoryRepairApplication - No active profile set, falling back to default profiles: default
+01:29:46.743 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:29:46.906 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+01:29:46.914 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+01:29:46.914 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+01:29:46.915 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+01:29:46.916 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+01:29:46.916 [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+01:29:46.916 [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+01:29:46.919 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+01:29:46.987 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+01:29:46.987 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1119 ms
+01:29:48.194 [main] INFO  c.t.s.config.ExecutorServiceConfig - 初始化线程池, 核心线程数量: 8, 最大线程数量: 16, 允许线程空闲时间: 60, 缓冲队列大小: 200
+01:29:48.207 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+01:29:48.410 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+01:29:48.421 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+01:29:48.445 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+01:29:48.627 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+01:29:48.646 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path ''
+01:29:48.648 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Started SmartDormitoryRepairApplication in 3.14 seconds (JVM running for 4.14)
+01:29:48.649 [main] INFO  c.t.s.SmartDormitoryRepairApplication - smart-dormitory启动完成, 耗时: 3217毫秒, swagger地址: http://localhost:8086/swagger-ui.html
+01:30:09.617 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+01:30:09.618 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+01:30:09.622 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+01:30:09.781 [http-nio-8086-exec-1] INFO  c.t.s.c.SmartLoginController - 保存结果: true
+01:30:29.809 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Starting SmartDormitoryRepairApplication on DESKTOP-I1M4IDV with PID 1312 (E:\IdeaProjects\smart_dormitory_repair\target\classes started by 18417 in E:\IdeaProjects\smart_dormitory_repair)
+01:30:29.811 [main] INFO  c.t.s.SmartDormitoryRepairApplication - No active profile set, falling back to default profiles: default
+01:30:30.901 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:30:31.138 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+01:30:31.147 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+01:30:31.147 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+01:30:31.148 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+01:30:31.149 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+01:30:31.150 [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+01:30:31.150 [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+01:30:31.153 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+01:30:31.233 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+01:30:31.233 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1371 ms
+01:30:32.659 [main] INFO  c.t.s.config.ExecutorServiceConfig - 初始化线程池, 核心线程数量: 8, 最大线程数量: 16, 允许线程空闲时间: 60, 缓冲队列大小: 200
+01:30:32.675 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+01:30:32.945 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+01:30:32.960 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+01:30:32.995 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+01:30:33.242 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+01:30:33.268 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path ''
+01:30:33.272 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Started SmartDormitoryRepairApplication in 3.816 seconds (JVM running for 6.045)
+01:30:33.273 [main] INFO  c.t.s.SmartDormitoryRepairApplication - smart-dormitory启动完成, 耗时: 3906毫秒, swagger地址: http://localhost:8086/swagger-ui.html
+01:30:35.263 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+01:30:35.264 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+01:30:35.272 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+01:30:42.546 [http-nio-8086-exec-1] INFO  c.t.s.c.SmartLoginController - 保存结果: true
+01:34:13.424 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Starting SmartDormitoryRepairApplication on DESKTOP-I1M4IDV with PID 17460 (E:\IdeaProjects\smart_dormitory_repair\target\classes started by 18417 in E:\IdeaProjects\smart_dormitory_repair)
+01:34:13.428 [main] INFO  c.t.s.SmartDormitoryRepairApplication - No active profile set, falling back to default profiles: default
+01:34:14.690 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:34:14.950 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+01:34:14.959 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+01:34:14.959 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+01:34:14.960 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+01:34:14.961 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+01:34:14.961 [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+01:34:14.962 [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+01:34:14.965 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+01:34:15.051 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+01:34:15.051 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1565 ms
+01:34:16.501 [main] INFO  c.t.s.config.ExecutorServiceConfig - 初始化线程池, 核心线程数量: 8, 最大线程数量: 16, 允许线程空闲时间: 60, 缓冲队列大小: 200
+01:34:16.519 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+01:34:16.827 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+01:34:16.846 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+01:34:16.883 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+01:34:17.140 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+01:34:17.162 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path ''
+01:34:17.165 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Started SmartDormitoryRepairApplication in 4.164 seconds (JVM running for 5.523)
+01:34:17.167 [main] INFO  c.t.s.SmartDormitoryRepairApplication - smart-dormitory启动完成, 耗时: 4278毫秒, swagger地址: http://localhost:8086/swagger-ui.html
+01:34:29.669 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+01:34:29.669 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+01:34:29.676 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+01:34:29.864 [http-nio-8086-exec-1] INFO  c.t.s.c.SmartLoginController - 保存结果: true
+01:37:34.487 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Starting SmartDormitoryRepairApplication on DESKTOP-I1M4IDV with PID 13512 (E:\IdeaProjects\smart_dormitory_repair\target\classes started by 18417 in E:\IdeaProjects\smart_dormitory_repair)
+01:37:34.492 [main] INFO  c.t.s.SmartDormitoryRepairApplication - No active profile set, falling back to default profiles: default
+01:37:35.489 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:37:35.709 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+01:37:35.718 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+01:37:35.719 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+01:37:35.719 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+01:37:35.721 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+01:37:35.721 [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+01:37:35.721 [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+01:37:35.725 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+01:37:35.811 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+01:37:35.811 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1263 ms
+01:37:37.136 [main] INFO  c.t.s.config.ExecutorServiceConfig - 初始化线程池, 核心线程数量: 8, 最大线程数量: 16, 允许线程空闲时间: 60, 缓冲队列大小: 200
+01:37:37.152 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+01:37:37.398 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+01:37:37.412 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+01:37:37.446 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+01:37:37.666 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+01:37:37.689 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path ''
+01:37:37.692 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Started SmartDormitoryRepairApplication in 3.629 seconds (JVM running for 4.885)
+01:37:37.694 [main] INFO  c.t.s.SmartDormitoryRepairApplication - smart-dormitory启动完成, 耗时: 3721毫秒, swagger地址: http://localhost:8086/swagger-ui.html
+01:37:41.584 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+01:37:41.584 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+01:37:41.591 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+01:37:41.777 [http-nio-8086-exec-1] INFO  c.t.s.c.SmartLoginController - 保存结果: true
+01:53:07.112 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Starting SmartDormitoryRepairApplication on DESKTOP-I1M4IDV with PID 12680 (E:\IdeaProjects\smart_dormitory_repair\target\classes started by 18417 in E:\IdeaProjects\smart_dormitory_repair)
+01:53:07.116 [main] INFO  c.t.s.SmartDormitoryRepairApplication - No active profile set, falling back to default profiles: default
+01:53:08.177 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:53:08.378 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+01:53:08.387 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+01:53:08.388 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+01:53:08.388 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+01:53:08.390 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+01:53:08.390 [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+01:53:08.390 [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+01:53:08.393 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+01:53:08.473 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+01:53:08.473 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1299 ms
+01:53:09.799 [main] INFO  c.t.s.config.ExecutorServiceConfig - 初始化线程池, 核心线程数量: 8, 最大线程数量: 16, 允许线程空闲时间: 60, 缓冲队列大小: 200
+01:53:09.814 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+01:53:10.056 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+01:53:10.070 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+01:53:10.104 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+01:53:10.323 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+01:53:10.346 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path ''
+01:53:10.349 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Started SmartDormitoryRepairApplication in 3.655 seconds (JVM running for 4.905)
+01:53:10.351 [main] INFO  c.t.s.SmartDormitoryRepairApplication - smart-dormitory启动完成, 耗时: 3750毫秒, swagger地址: http://localhost:8086/swagger-ui.html
+01:53:18.595 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+01:53:18.595 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+01:53:18.601 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+01:53:18.769 [http-nio-8086-exec-1] INFO  c.t.s.c.SmartLoginController - 保存结果: true
+01:53:18.930 [http-nio-8086-exec-1] INFO  c.t.s.c.SmartLoginController - 解析结果: hello
+01:53:52.866 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Starting SmartDormitoryRepairApplication on DESKTOP-I1M4IDV with PID 16508 (E:\IdeaProjects\smart_dormitory_repair\target\classes started by 18417 in E:\IdeaProjects\smart_dormitory_repair)
+01:53:52.870 [main] INFO  c.t.s.SmartDormitoryRepairApplication - No active profile set, falling back to default profiles: default
+01:53:53.944 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:53:54.180 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+01:53:54.189 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+01:53:54.190 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+01:53:54.190 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+01:53:54.191 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+01:53:54.192 [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+01:53:54.192 [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+01:53:54.195 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+01:53:54.288 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+01:53:54.289 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1325 ms
+01:53:55.676 [main] INFO  c.t.s.config.ExecutorServiceConfig - 初始化线程池, 核心线程数量: 8, 最大线程数量: 16, 允许线程空闲时间: 60, 缓冲队列大小: 200
+01:53:55.696 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+01:53:55.952 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+01:53:55.967 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+01:53:56.001 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+01:53:56.220 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+01:53:56.244 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path ''
+01:53:56.247 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Started SmartDormitoryRepairApplication in 3.802 seconds (JVM running for 5.071)
+01:53:56.249 [main] INFO  c.t.s.SmartDormitoryRepairApplication - smart-dormitory启动完成, 耗时: 3899毫秒, swagger地址: http://localhost:8086/swagger-ui.html
+01:53:59.703 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+01:53:59.703 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+01:53:59.710 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+01:53:59.937 [http-nio-8086-exec-1] INFO  c.t.s.c.SmartLoginController - 保存结果: true
+01:56:10.752 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Starting SmartDormitoryRepairApplication on DESKTOP-I1M4IDV with PID 16736 (E:\IdeaProjects\smart_dormitory_repair\target\classes started by 18417 in E:\IdeaProjects\smart_dormitory_repair)
+01:56:10.756 [main] INFO  c.t.s.SmartDormitoryRepairApplication - No active profile set, falling back to default profiles: default
+01:56:12.114 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:56:12.357 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+01:56:12.369 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+01:56:12.370 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+01:56:12.370 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+01:56:12.372 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+01:56:12.373 [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+01:56:12.373 [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+01:56:12.377 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+01:56:12.475 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+01:56:12.475 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1638 ms
+01:56:13.830 [main] INFO  c.t.s.config.ExecutorServiceConfig - 初始化线程池, 核心线程数量: 8, 最大线程数量: 16, 允许线程空闲时间: 60, 缓冲队列大小: 200
+01:56:13.846 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+01:56:14.089 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+01:56:14.103 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+01:56:14.136 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+01:56:14.366 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+01:56:14.390 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path ''
+01:56:14.393 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Started SmartDormitoryRepairApplication in 4.092 seconds (JVM running for 5.401)
+01:56:14.396 [main] INFO  c.t.s.SmartDormitoryRepairApplication - smart-dormitory启动完成, 耗时: 4194毫秒, swagger地址: http://localhost:8086/swagger-ui.html
+01:56:19.476 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+01:56:19.477 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+01:56:19.484 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+01:56:19.720 [http-nio-8086-exec-1] INFO  c.t.s.c.SmartLoginController - 保存结果: true
+01:56:19.877 [http-nio-8086-exec-1] INFO  c.t.s.c.SmartLoginController - 解析结果: c9636e7a-863b-46c2-b842-6cfdd9cd8a49
+11:08:11.706 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Starting SmartDormitoryRepairApplication on DESKTOP-I1M4IDV with PID 2248 (E:\IdeaProjects\smart_dormitory_repair\target\classes started by 18417 in E:\IdeaProjects\smart_dormitory_repair)
+11:08:11.709 [main] INFO  c.t.s.SmartDormitoryRepairApplication - No active profile set, falling back to default profiles: default
+11:08:12.722 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:08:12.891 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+11:08:12.898 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+11:08:12.898 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:08:12.898 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+11:08:12.900 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+11:08:12.901 [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+11:08:12.901 [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+11:08:12.903 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+11:08:12.986 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:08:12.986 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1222 ms
+11:08:14.206 [main] INFO  c.t.s.config.ExecutorServiceConfig - 初始化线程池, 核心线程数量: 8, 最大线程数量: 16, 允许线程空闲时间: 60, 缓冲队列大小: 200
+11:08:14.220 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+11:08:14.463 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+11:08:14.476 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+11:08:14.503 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+11:08:14.695 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+11:08:14.715 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path ''
+11:08:14.717 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Started SmartDormitoryRepairApplication in 3.359 seconds (JVM running for 4.477)
+11:08:14.718 [main] INFO  c.t.s.SmartDormitoryRepairApplication - smart-dormitory启动完成, 耗时: 3426毫秒, swagger地址: http://localhost:8086/swagger-ui.html
+11:08:17.680 [http-nio-8086-exec-4] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:08:17.680 [http-nio-8086-exec-4] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11:08:17.693 [http-nio-8086-exec-4] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 13 ms
+11:08:21.583 [http-nio-8086-exec-8] ERROR c.t.s.util.PdfUtil - 生成pdf失败: java.io.FileNotFoundException: templates\pdf does not exist.
+11:08:21.583 [http-nio-8086-exec-8] INFO  c.t.s.c.SmartLoginController - pdf生成结果: false
+11:08:21.639 [http-nio-8086-exec-8] INFO  c.t.s.config.GlobalExceptionHandler - 发生异常, localTime: 2022-09-04 11:08:21, time: 1662260901639, 异常信息: cn.hutool.core.io.IORuntimeException: File not exist: 0a1b5bab-f4d2-4836-879c-b75d85814470_提货函.pdf
+11:09:31.146 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Starting SmartDormitoryRepairApplication on DESKTOP-I1M4IDV with PID 17676 (E:\IdeaProjects\smart_dormitory_repair\target\classes started by 18417 in E:\IdeaProjects\smart_dormitory_repair)
+11:09:31.149 [main] INFO  c.t.s.SmartDormitoryRepairApplication - No active profile set, falling back to default profiles: default
+11:09:32.216 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:09:32.490 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+11:09:32.499 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+11:09:32.500 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:09:32.500 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+11:09:32.502 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+11:09:32.502 [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+11:09:32.502 [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+11:09:32.505 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+11:09:32.595 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:09:32.595 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1395 ms
+11:09:34.025 [main] INFO  c.t.s.config.ExecutorServiceConfig - 初始化线程池, 核心线程数量: 8, 最大线程数量: 16, 允许线程空闲时间: 60, 缓冲队列大小: 200
+11:09:34.042 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+11:09:34.303 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+11:09:34.316 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+11:09:34.348 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+11:09:34.572 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+11:09:34.596 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path ''
+11:09:34.599 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Started SmartDormitoryRepairApplication in 3.809 seconds (JVM running for 5.696)
+11:09:34.601 [main] INFO  c.t.s.SmartDormitoryRepairApplication - smart-dormitory启动完成, 耗时: 3890毫秒, swagger地址: http://localhost:8086/swagger-ui.html
+11:09:37.908 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:09:37.909 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11:09:37.917 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+11:09:41.358 [http-nio-8086-exec-1] ERROR c.t.s.util.PdfUtil - 生成pdf失败: java.io.FileNotFoundException: templates\pdf does not exist.
+11:09:41.358 [http-nio-8086-exec-1] INFO  c.t.s.c.SmartLoginController - pdf生成结果: false
+11:09:41.431 [http-nio-8086-exec-1] INFO  c.t.s.config.GlobalExceptionHandler - 发生异常, localTime: 2022-09-04 11:09:41, time: 1662260981431, 异常信息: cn.hutool.core.io.IORuntimeException: File not exist: 64d9805c-8413-4c38-9181-fe4caba9b11a_提货函.pdf
+11:10:37.251 [http-nio-8086-exec-3] ERROR c.t.s.util.PdfUtil - 生成pdf失败: java.io.FileNotFoundException: templates\pdf does not exist.
+11:10:37.251 [http-nio-8086-exec-3] INFO  c.t.s.c.SmartLoginController - pdf生成结果: false
+11:10:37.252 [http-nio-8086-exec-3] INFO  c.t.s.config.GlobalExceptionHandler - 发生异常, localTime: 2022-09-04 11:10:37, time: 1662261037252, 异常信息: cn.hutool.core.io.IORuntimeException: File not exist: 3367dc81-f681-4eee-a5ae-047bcb05af78_提货函.pdf
+11:11:34.094 [http-nio-8086-exec-4] ERROR c.t.s.util.PdfUtil - 生成pdf失败: java.io.FileNotFoundException: templates\pdf does not exist.
+11:11:34.094 [http-nio-8086-exec-4] INFO  c.t.s.c.SmartLoginController - pdf生成结果: false
+11:11:34.095 [http-nio-8086-exec-4] INFO  c.t.s.config.GlobalExceptionHandler - 发生异常, localTime: 2022-09-04 11:11:34, time: 1662261094095, 异常信息: cn.hutool.core.io.IORuntimeException: File not exist: 41153802-17cc-43b9-83a2-f54e01ba51ae_提货函.pdf
+11:13:31.790 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Starting SmartDormitoryRepairApplication on DESKTOP-I1M4IDV with PID 17024 (E:\IdeaProjects\smart_dormitory_repair\target\classes started by 18417 in E:\IdeaProjects\smart_dormitory_repair)
+11:13:31.793 [main] INFO  c.t.s.SmartDormitoryRepairApplication - No active profile set, falling back to default profiles: default
+11:13:32.907 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:13:33.122 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+11:13:33.131 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+11:13:33.131 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:13:33.131 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+11:13:33.133 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+11:13:33.134 [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+11:13:33.134 [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+11:13:33.136 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+11:13:33.218 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:13:33.218 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1358 ms
+11:13:34.567 [main] INFO  c.t.s.config.ExecutorServiceConfig - 初始化线程池, 核心线程数量: 8, 最大线程数量: 16, 允许线程空闲时间: 60, 缓冲队列大小: 200
+11:13:34.581 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+11:13:34.817 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+11:13:34.831 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+11:13:34.868 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+11:13:35.103 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+11:13:35.127 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path ''
+11:13:35.130 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Started SmartDormitoryRepairApplication in 3.774 seconds (JVM running for 5.061)
+11:13:35.131 [main] INFO  c.t.s.SmartDormitoryRepairApplication - smart-dormitory启动完成, 耗时: 3877毫秒, swagger地址: http://localhost:8086/swagger-ui.html
+11:13:38.413 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:13:38.413 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11:13:38.421 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+11:13:57.237 [http-nio-8086-exec-1] ERROR c.t.s.util.PdfUtil - 生成pdf失败: java.io.FileNotFoundException: templates\pdf does not exist.
+11:13:57.237 [http-nio-8086-exec-1] INFO  c.t.s.c.SmartLoginController - pdf生成结果: false
+11:13:57.321 [http-nio-8086-exec-1] INFO  c.t.s.config.GlobalExceptionHandler - 发生异常, localTime: 2022-09-04 11:13:57, time: 1662261237321, 异常信息: cn.hutool.core.io.IORuntimeException: File not exist: 1069e91d-4876-4124-8deb-0cae60ee84b0_提货函.pdf
+11:14:17.679 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Starting SmartDormitoryRepairApplication on DESKTOP-I1M4IDV with PID 6104 (E:\IdeaProjects\smart_dormitory_repair\target\classes started by 18417 in E:\IdeaProjects\smart_dormitory_repair)
+11:14:17.682 [main] INFO  c.t.s.SmartDormitoryRepairApplication - No active profile set, falling back to default profiles: default
+11:14:18.714 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:14:18.921 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+11:14:18.930 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+11:14:18.931 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:14:18.931 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+11:14:18.933 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+11:14:18.933 [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+11:14:18.933 [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+11:14:18.936 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+11:14:19.020 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:14:19.020 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1280 ms
+11:14:20.330 [main] INFO  c.t.s.config.ExecutorServiceConfig - 初始化线程池, 核心线程数量: 8, 最大线程数量: 16, 允许线程空闲时间: 60, 缓冲队列大小: 200
+11:14:20.345 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+11:14:20.584 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+11:14:20.597 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+11:14:20.632 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+11:14:20.856 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+11:14:20.880 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path ''
+11:14:20.883 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Started SmartDormitoryRepairApplication in 3.621 seconds (JVM running for 4.892)
+11:14:20.885 [main] INFO  c.t.s.SmartDormitoryRepairApplication - smart-dormitory启动完成, 耗时: 3724毫秒, swagger地址: http://localhost:8086/swagger-ui.html
+11:14:23.790 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:14:23.790 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11:14:23.797 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+11:14:48.113 [http-nio-8086-exec-1] ERROR c.t.s.util.PdfUtil - 生成pdf失败: java.io.FileNotFoundException: templates\pdf does not exist.
+11:14:48.113 [http-nio-8086-exec-1] INFO  c.t.s.c.SmartLoginController - pdf生成结果: false
+11:14:48.195 [http-nio-8086-exec-1] INFO  c.t.s.config.GlobalExceptionHandler - 发生异常, localTime: 2022-09-04 11:14:48, time: 1662261288195, 异常信息: cn.hutool.core.io.IORuntimeException: File not exist: 2ec7424f-a74d-4d4c-bf2a-d1621eccb411_提货函.pdf
+11:17:17.503 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Starting SmartDormitoryRepairApplication on DESKTOP-I1M4IDV with PID 8388 (E:\IdeaProjects\smart_dormitory_repair\target\classes started by 18417 in E:\IdeaProjects\smart_dormitory_repair)
+11:17:17.509 [main] INFO  c.t.s.SmartDormitoryRepairApplication - No active profile set, falling back to default profiles: default
+11:17:18.681 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:17:18.896 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+11:17:18.905 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+11:17:18.905 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:17:18.905 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+11:17:18.907 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+11:17:18.907 [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+11:17:18.907 [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+11:17:18.910 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+11:17:18.999 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:17:18.999 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1333 ms
+11:17:20.372 [main] INFO  c.t.s.config.ExecutorServiceConfig - 初始化线程池, 核心线程数量: 8, 最大线程数量: 16, 允许线程空闲时间: 60, 缓冲队列大小: 200
+11:17:20.389 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+11:17:20.633 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+11:17:20.647 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+11:17:20.685 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+11:17:20.939 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+11:17:20.966 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path ''
+11:17:20.970 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Started SmartDormitoryRepairApplication in 3.967 seconds (JVM running for 5.323)
+11:17:20.972 [main] INFO  c.t.s.SmartDormitoryRepairApplication - smart-dormitory启动完成, 耗时: 4093毫秒, swagger地址: http://localhost:8086/swagger-ui.html
+11:17:25.576 [http-nio-8086-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:17:25.576 [http-nio-8086-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11:17:25.585 [http-nio-8086-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+11:17:56.059 [http-nio-8086-exec-2] ERROR c.t.s.util.PdfUtil - 生成pdf失败: org.xhtmlrenderer.util.XRRuntimeException: Can't load the XML resource (using TrAX transformer). org.xml.sax.SAXParseException; lineNumber: 14; columnNumber: 3; 元素类型 "meta" 必须由匹配的结束标记 "</meta>" 终止。
+11:17:56.059 [http-nio-8086-exec-2] INFO  c.t.s.c.SmartLoginController - pdf生成结果: false
+11:18:08.276 [http-nio-8086-exec-3] ERROR c.t.s.util.PdfUtil - 生成pdf失败: org.xhtmlrenderer.util.XRRuntimeException: Can't load the XML resource (using TrAX transformer). org.xml.sax.SAXParseException; lineNumber: 14; columnNumber: 3; 元素类型 "meta" 必须由匹配的结束标记 "</meta>" 终止。
+11:18:08.276 [http-nio-8086-exec-3] INFO  c.t.s.c.SmartLoginController - pdf生成结果: false
+11:20:36.451 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Starting SmartDormitoryRepairApplication on DESKTOP-I1M4IDV with PID 3764 (E:\IdeaProjects\smart_dormitory_repair\target\classes started by 18417 in E:\IdeaProjects\smart_dormitory_repair)
+11:20:36.456 [main] INFO  c.t.s.SmartDormitoryRepairApplication - No active profile set, falling back to default profiles: default
+11:20:37.594 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:20:37.839 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+11:20:37.847 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+11:20:37.848 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:20:37.848 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+11:20:37.850 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+11:20:37.850 [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+11:20:37.850 [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+11:20:37.853 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+11:20:37.935 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:20:37.935 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1418 ms
+11:20:39.258 [main] INFO  c.t.s.config.ExecutorServiceConfig - 初始化线程池, 核心线程数量: 8, 最大线程数量: 16, 允许线程空闲时间: 60, 缓冲队列大小: 200
+11:20:39.273 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+11:20:39.517 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+11:20:39.531 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+11:20:39.566 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+11:20:39.802 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+11:20:39.825 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path ''
+11:20:39.828 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Started SmartDormitoryRepairApplication in 3.797 seconds (JVM running for 5.076)
+11:20:39.830 [main] INFO  c.t.s.SmartDormitoryRepairApplication - smart-dormitory启动完成, 耗时: 3900毫秒, swagger地址: http://localhost:8086/swagger-ui.html
+11:20:46.282 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:20:46.283 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11:20:46.288 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+11:20:46.618 [http-nio-8086-exec-1] ERROR c.t.s.util.PdfUtil - 生成pdf失败: org.xhtmlrenderer.util.XRRuntimeException: Can't load the XML resource (using TrAX transformer). org.xml.sax.SAXParseException; lineNumber: 19; columnNumber: 14; 引用了实体 "nbsp", 但未声明它。
+11:20:46.618 [http-nio-8086-exec-1] INFO  c.t.s.c.SmartLoginController - pdf生成结果: false
+11:22:05.853 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Starting SmartDormitoryRepairApplication on DESKTOP-I1M4IDV with PID 17136 (E:\IdeaProjects\smart_dormitory_repair\target\classes started by 18417 in E:\IdeaProjects\smart_dormitory_repair)
+11:22:05.856 [main] INFO  c.t.s.SmartDormitoryRepairApplication - No active profile set, falling back to default profiles: default
+11:22:06.873 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:22:07.082 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+11:22:07.090 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+11:22:07.091 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:22:07.091 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+11:22:07.093 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+11:22:07.093 [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+11:22:07.093 [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+11:22:07.097 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+11:22:07.177 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:22:07.177 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1263 ms
+11:22:08.536 [main] INFO  c.t.s.config.ExecutorServiceConfig - 初始化线程池, 核心线程数量: 8, 最大线程数量: 16, 允许线程空闲时间: 60, 缓冲队列大小: 200
+11:22:08.554 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+11:22:08.862 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+11:22:08.876 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+11:22:08.912 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+11:22:09.180 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+11:22:09.206 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path ''
+11:22:09.209 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Started SmartDormitoryRepairApplication in 3.783 seconds (JVM running for 5.023)
+11:22:09.211 [main] INFO  c.t.s.SmartDormitoryRepairApplication - smart-dormitory启动完成, 耗时: 3888毫秒, swagger地址: http://localhost:8086/swagger-ui.html
+11:22:18.866 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:22:18.871 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11:22:18.890 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 18 ms
+11:22:20.414 [http-nio-8086-exec-1] INFO  c.t.s.c.SmartLoginController - pdf生成结果: true
+11:22:45.312 [http-nio-8086-exec-2] INFO  c.t.s.c.SmartLoginController - pdf生成结果: true
+11:24:55.808 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Starting SmartDormitoryRepairApplication on DESKTOP-I1M4IDV with PID 14816 (E:\IdeaProjects\smart_dormitory_repair\target\classes started by 18417 in E:\IdeaProjects\smart_dormitory_repair)
+11:24:55.812 [main] INFO  c.t.s.SmartDormitoryRepairApplication - No active profile set, falling back to default profiles: default
+11:24:56.921 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:24:57.155 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+11:24:57.164 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+11:24:57.164 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:24:57.164 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+11:24:57.166 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+11:24:57.166 [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+11:24:57.167 [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+11:24:57.169 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+11:24:57.250 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:24:57.250 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1379 ms
+11:24:58.661 [main] INFO  c.t.s.config.ExecutorServiceConfig - 初始化线程池, 核心线程数量: 8, 最大线程数量: 16, 允许线程空闲时间: 60, 缓冲队列大小: 200
+11:24:58.677 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+11:24:58.919 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+11:24:58.932 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+11:24:58.967 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+11:24:59.201 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+11:24:59.225 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path ''
+11:24:59.228 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Started SmartDormitoryRepairApplication in 3.851 seconds (JVM running for 5.119)
+11:24:59.229 [main] INFO  c.t.s.SmartDormitoryRepairApplication - smart-dormitory启动完成, 耗时: 3953毫秒, swagger地址: http://localhost:8086/swagger-ui.html
+11:25:07.692 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:25:07.692 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11:25:07.698 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+11:25:08.337 [http-nio-8086-exec-1] INFO  c.t.s.c.SmartLoginController - pdf生成结果: true
+11:25:22.867 [http-nio-8086-exec-2] INFO  c.t.s.c.SmartLoginController - pdf生成结果: true
+11:25:29.037 [http-nio-8086-exec-3] INFO  c.t.s.c.SmartLoginController - pdf生成结果: true
+11:33:17.961 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Starting SmartDormitoryRepairApplication on DESKTOP-I1M4IDV with PID 16368 (E:\IdeaProjects\smart_dormitory_repair\target\classes started by 18417 in E:\IdeaProjects\smart_dormitory_repair)
+11:33:17.965 [main] INFO  c.t.s.SmartDormitoryRepairApplication - No active profile set, falling back to default profiles: default
+11:33:19.060 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:33:19.269 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+11:33:19.278 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+11:33:19.279 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:33:19.279 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+11:33:19.280 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+11:33:19.281 [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+11:33:19.281 [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+11:33:19.284 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+11:33:19.369 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:33:19.369 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1344 ms
+11:33:20.775 [main] INFO  c.t.s.config.ExecutorServiceConfig - 初始化线程池, 核心线程数量: 8, 最大线程数量: 16, 允许线程空闲时间: 60, 缓冲队列大小: 200
+11:33:20.794 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+11:33:21.046 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+11:33:21.059 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+11:33:21.094 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+11:33:21.358 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+11:33:21.387 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path ''
+11:33:21.392 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Started SmartDormitoryRepairApplication in 4.28 seconds (JVM running for 5.707)
+11:33:21.393 [main] INFO  c.t.s.SmartDormitoryRepairApplication - smart-dormitory启动完成, 耗时: 4450毫秒, swagger地址: http://localhost:8086/swagger-ui.html
+11:34:42.767 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Starting SmartDormitoryRepairApplication on DESKTOP-I1M4IDV with PID 9536 (E:\IdeaProjects\smart_dormitory_repair\target\classes started by 18417 in E:\IdeaProjects\smart_dormitory_repair)
+11:34:42.770 [main] INFO  c.t.s.SmartDormitoryRepairApplication - No active profile set, falling back to default profiles: default
+11:34:43.928 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:34:44.138 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+11:34:44.147 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+11:34:44.148 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:34:44.148 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+11:34:44.149 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+11:34:44.150 [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+11:34:44.150 [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+11:34:44.153 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+11:34:44.239 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:34:44.239 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1403 ms
+11:34:45.737 [main] INFO  c.t.s.config.ExecutorServiceConfig - 初始化线程池, 核心线程数量: 8, 最大线程数量: 16, 允许线程空闲时间: 60, 缓冲队列大小: 200
+11:34:45.754 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+11:34:46.022 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+11:34:46.045 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+11:34:46.092 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+11:34:46.328 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+11:34:46.352 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path ''
+11:34:46.355 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Started SmartDormitoryRepairApplication in 4.042 seconds (JVM running for 5.323)
+11:34:46.357 [main] INFO  c.t.s.SmartDormitoryRepairApplication - smart-dormitory启动完成, 耗时: 4141毫秒, swagger地址: http://localhost:8086/swagger-ui.html
+11:34:59.967 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Starting SmartDormitoryRepairApplication on DESKTOP-I1M4IDV with PID 16532 (E:\IdeaProjects\smart_dormitory_repair\target\classes started by 18417 in E:\IdeaProjects\smart_dormitory_repair)
+11:34:59.970 [main] INFO  c.t.s.SmartDormitoryRepairApplication - No active profile set, falling back to default profiles: default
+11:35:01.104 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:35:01.325 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+11:35:01.335 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+11:35:01.336 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:35:01.336 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+11:35:01.338 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+11:35:01.338 [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+11:35:01.338 [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+11:35:01.341 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+11:35:01.432 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:35:01.432 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1402 ms
+11:35:02.837 [main] INFO  c.t.s.config.ExecutorServiceConfig - 初始化线程池, 核心线程数量: 8, 最大线程数量: 16, 允许线程空闲时间: 60, 缓冲队列大小: 200
+11:35:02.856 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+11:35:03.127 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+11:35:03.143 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+11:35:03.181 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+11:35:03.436 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+11:35:03.461 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path ''
+11:35:03.464 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Started SmartDormitoryRepairApplication in 3.928 seconds (JVM running for 5.188)
+11:35:03.466 [main] INFO  c.t.s.SmartDormitoryRepairApplication - smart-dormitory启动完成, 耗时: 4040毫秒, swagger地址: http://localhost:8086/swagger-ui.html
+11:35:06.750 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:35:06.750 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11:35:06.757 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+11:35:07.459 [http-nio-8086-exec-1] INFO  c.t.s.c.SmartLoginController - pdf生成结果: true
+11:35:09.538 [http-nio-8086-exec-2] INFO  c.t.s.c.SmartLoginController - pdf生成结果: true
+11:37:04.135 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Starting SmartDormitoryRepairApplication on DESKTOP-I1M4IDV with PID 12352 (E:\IdeaProjects\smart_dormitory_repair\target\classes started by 18417 in E:\IdeaProjects\smart_dormitory_repair)
+11:37:04.140 [main] INFO  c.t.s.SmartDormitoryRepairApplication - No active profile set, falling back to default profiles: default
+11:37:05.164 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:37:05.368 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+11:37:05.376 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+11:37:05.376 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:37:05.376 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+11:37:05.378 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+11:37:05.378 [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+11:37:05.379 [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+11:37:05.382 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+11:37:05.465 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:37:05.465 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1261 ms
+11:37:06.894 [main] INFO  c.t.s.config.ExecutorServiceConfig - 初始化线程池, 核心线程数量: 8, 最大线程数量: 16, 允许线程空闲时间: 60, 缓冲队列大小: 200
+11:37:06.909 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+11:37:07.152 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+11:37:07.168 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+11:37:07.203 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+11:37:07.438 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+11:37:07.467 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path ''
+11:37:07.470 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Started SmartDormitoryRepairApplication in 3.746 seconds (JVM running for 4.996)
+11:37:07.472 [main] INFO  c.t.s.SmartDormitoryRepairApplication - smart-dormitory启动完成, 耗时: 3847毫秒, swagger地址: http://localhost:8086/swagger-ui.html
+11:37:14.373 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:37:14.374 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11:37:14.380 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+11:37:15.105 [http-nio-8086-exec-1] INFO  c.t.s.c.SmartLoginController - pdf生成结果: true
+11:37:17.240 [http-nio-8086-exec-2] INFO  c.t.s.c.SmartLoginController - pdf生成结果: true
+11:44:47.735 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Starting SmartDormitoryRepairApplication on DESKTOP-I1M4IDV with PID 3348 (E:\IdeaProjects\smart_dormitory_repair\target\classes started by 18417 in E:\IdeaProjects\smart_dormitory_repair)
+11:44:47.738 [main] INFO  c.t.s.SmartDormitoryRepairApplication - No active profile set, falling back to default profiles: default
+11:44:48.783 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:44:48.993 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+11:44:49.002 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+11:44:49.003 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:44:49.003 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+11:44:49.005 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+11:44:49.005 [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+11:44:49.005 [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+11:44:49.010 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+11:44:49.090 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:44:49.091 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1293 ms
+11:44:50.410 [main] INFO  c.t.s.config.ExecutorServiceConfig - 初始化线程池, 核心线程数量: 8, 最大线程数量: 16, 允许线程空闲时间: 60, 缓冲队列大小: 200
+11:44:50.426 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+11:44:50.668 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+11:44:50.682 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+11:44:50.727 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+11:44:50.944 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+11:44:50.968 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path ''
+11:44:50.971 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Started SmartDormitoryRepairApplication in 3.658 seconds (JVM running for 4.908)
+11:44:50.973 [main] INFO  c.t.s.SmartDormitoryRepairApplication - smart-dormitory启动完成, 耗时: 3753毫秒, swagger地址: http://localhost:8086/swagger-ui.html
+11:44:54.602 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:44:54.602 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11:44:54.611 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+11:44:55.082 [http-nio-8086-exec-1] ERROR c.t.s.util.PdfUtil - 生成pdf失败: java.io.IOException: Unsupported font type
+11:44:55.082 [http-nio-8086-exec-1] INFO  c.t.s.c.SmartLoginController - pdf生成结果: false
+11:44:56.517 [http-nio-8086-exec-2] ERROR c.t.s.util.PdfUtil - 生成pdf失败: java.io.IOException: Unsupported font type
+11:44:56.517 [http-nio-8086-exec-2] INFO  c.t.s.c.SmartLoginController - pdf生成结果: false
+11:44:56.533 [http-nio-8086-exec-3] ERROR c.t.s.util.PdfUtil - 生成pdf失败: java.io.IOException: Unsupported font type
+11:44:56.533 [http-nio-8086-exec-3] INFO  c.t.s.c.SmartLoginController - pdf生成结果: false
+11:44:59.558 [http-nio-8086-exec-5] ERROR c.t.s.util.PdfUtil - 生成pdf失败: java.io.IOException: Unsupported font type
+11:44:59.558 [http-nio-8086-exec-5] INFO  c.t.s.c.SmartLoginController - pdf生成结果: false
+11:47:20.032 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Starting SmartDormitoryRepairApplication on DESKTOP-I1M4IDV with PID 17608 (E:\IdeaProjects\smart_dormitory_repair\target\classes started by 18417 in E:\IdeaProjects\smart_dormitory_repair)
+11:47:20.036 [main] INFO  c.t.s.SmartDormitoryRepairApplication - No active profile set, falling back to default profiles: default
+11:47:21.068 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:47:21.276 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+11:47:21.284 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+11:47:21.285 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:47:21.285 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+11:47:21.287 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+11:47:21.287 [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+11:47:21.287 [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+11:47:21.290 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+11:47:21.370 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:47:21.371 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1270 ms
+11:47:22.743 [main] INFO  c.t.s.config.ExecutorServiceConfig - 初始化线程池, 核心线程数量: 8, 最大线程数量: 16, 允许线程空闲时间: 60, 缓冲队列大小: 200
+11:47:22.759 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+11:47:22.999 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+11:47:23.014 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+11:47:23.048 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+11:47:23.272 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+11:47:23.295 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path ''
+11:47:23.298 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Started SmartDormitoryRepairApplication in 3.688 seconds (JVM running for 4.926)
+11:47:23.300 [main] INFO  c.t.s.SmartDormitoryRepairApplication - smart-dormitory启动完成, 耗时: 3790毫秒, swagger地址: http://localhost:8086/swagger-ui.html
+11:47:27.682 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:47:27.682 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11:47:27.692 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+11:47:28.112 [http-nio-8086-exec-1] ERROR c.t.s.util.PdfUtil - 生成pdf失败: java.io.IOException: Unsupported font type
+11:47:28.113 [http-nio-8086-exec-1] INFO  c.t.s.c.SmartLoginController - pdf生成结果: false
+11:58:15.940 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Starting SmartDormitoryRepairApplication on DESKTOP-I1M4IDV with PID 15956 (E:\IdeaProjects\smart_dormitory_repair\target\classes started by 18417 in E:\IdeaProjects\smart_dormitory_repair)
+11:58:15.944 [main] INFO  c.t.s.SmartDormitoryRepairApplication - No active profile set, falling back to default profiles: default
+11:58:17.068 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:58:17.303 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+11:58:17.313 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+11:58:17.313 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:58:17.314 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+11:58:17.315 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+11:58:17.315 [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+11:58:17.316 [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+11:58:17.319 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+11:58:17.404 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:58:17.404 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1388 ms
+11:58:18.928 [main] INFO  c.t.s.config.ExecutorServiceConfig - 初始化线程池, 核心线程数量: 8, 最大线程数量: 16, 允许线程空闲时间: 60, 缓冲队列大小: 200
+11:58:18.946 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+11:58:19.265 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+11:58:19.282 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+11:58:19.323 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+11:58:19.583 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+11:58:19.609 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path ''
+11:58:19.614 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Started SmartDormitoryRepairApplication in 4.105 seconds (JVM running for 5.427)
+11:58:19.618 [main] INFO  c.t.s.SmartDormitoryRepairApplication - smart-dormitory启动完成, 耗时: 4219毫秒, swagger地址: http://localhost:8086/swagger-ui.html
+11:58:23.661 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:58:23.661 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11:58:23.670 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+11:58:24.090 [http-nio-8086-exec-1] ERROR c.t.s.util.PdfUtil - 生成pdf失败: java.io.IOException: /E:/IdeaProjects/smart_dormitory_repair/target/classes//font/simsun.ttf not found as file or resource.
+11:58:24.091 [http-nio-8086-exec-1] INFO  c.t.s.c.SmartLoginController - pdf生成结果: false
+11:58:25.903 [http-nio-8086-exec-2] ERROR c.t.s.util.PdfUtil - 生成pdf失败: java.io.IOException: /E:/IdeaProjects/smart_dormitory_repair/target/classes//font/simsun.ttf not found as file or resource.
+11:58:25.903 [http-nio-8086-exec-2] INFO  c.t.s.c.SmartLoginController - pdf生成结果: false
+11:58:25.920 [http-nio-8086-exec-3] ERROR c.t.s.util.PdfUtil - 生成pdf失败: java.io.IOException: /E:/IdeaProjects/smart_dormitory_repair/target/classes//font/simsun.ttf not found as file or resource.
+11:58:25.920 [http-nio-8086-exec-3] INFO  c.t.s.c.SmartLoginController - pdf生成结果: false
+11:59:00.835 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Starting SmartDormitoryRepairApplication on DESKTOP-I1M4IDV with PID 19172 (E:\IdeaProjects\smart_dormitory_repair\target\classes started by 18417 in E:\IdeaProjects\smart_dormitory_repair)
+11:59:00.839 [main] INFO  c.t.s.SmartDormitoryRepairApplication - No active profile set, falling back to default profiles: default
+11:59:01.878 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:59:02.121 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+11:59:02.133 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+11:59:02.133 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:59:02.134 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+11:59:02.136 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+11:59:02.136 [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+11:59:02.136 [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+11:59:02.141 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+11:59:02.241 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:59:02.241 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1336 ms
+11:59:03.775 [main] INFO  c.t.s.config.ExecutorServiceConfig - 初始化线程池, 核心线程数量: 8, 最大线程数量: 16, 允许线程空闲时间: 60, 缓冲队列大小: 200
+11:59:03.792 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+11:59:04.033 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+11:59:04.048 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+11:59:04.086 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+11:59:04.337 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+11:59:04.364 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path ''
+11:59:04.368 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Started SmartDormitoryRepairApplication in 3.953 seconds (JVM running for 5.233)
+11:59:04.370 [main] INFO  c.t.s.SmartDormitoryRepairApplication - smart-dormitory启动完成, 耗时: 4061毫秒, swagger地址: http://localhost:8086/swagger-ui.html
+11:59:08.176 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:59:08.176 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11:59:08.184 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+11:59:08.664 [http-nio-8086-exec-1] ERROR c.t.s.util.PdfUtil - 生成pdf失败: java.io.IOException: /E:/IdeaProjects/smart_dormitory_repair/target/classes/font/simsun.ttf not found as file or resource.
+11:59:08.664 [http-nio-8086-exec-1] INFO  c.t.s.c.SmartLoginController - pdf生成结果: false
+11:59:59.692 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Starting SmartDormitoryRepairApplication on DESKTOP-I1M4IDV with PID 17372 (E:\IdeaProjects\smart_dormitory_repair\target\classes started by 18417 in E:\IdeaProjects\smart_dormitory_repair)
+11:59:59.696 [main] INFO  c.t.s.SmartDormitoryRepairApplication - No active profile set, falling back to default profiles: default
+12:00:00.770 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12:00:00.992 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+12:00:01.002 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+12:00:01.003 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+12:00:01.003 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+12:00:01.004 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+12:00:01.005 [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12:00:01.005 [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+12:00:01.008 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+12:00:01.109 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+12:00:01.109 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1343 ms
+12:00:02.454 [main] INFO  c.t.s.config.ExecutorServiceConfig - 初始化线程池, 核心线程数量: 8, 最大线程数量: 16, 允许线程空闲时间: 60, 缓冲队列大小: 200
+12:00:02.470 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+12:00:02.708 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+12:00:02.723 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+12:00:02.756 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+12:00:02.980 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+12:00:03.014 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path ''
+12:00:03.018 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Started SmartDormitoryRepairApplication in 3.746 seconds (JVM running for 4.969)
+12:00:03.020 [main] INFO  c.t.s.SmartDormitoryRepairApplication - smart-dormitory启动完成, 耗时: 3850毫秒, swagger地址: http://localhost:8086/swagger-ui.html
+12:00:07.230 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12:00:07.231 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+12:00:07.239 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+12:00:07.926 [http-nio-8086-exec-1] INFO  c.t.s.c.SmartLoginController - pdf生成结果: true
+12:02:10.688 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Starting SmartDormitoryRepairApplication on DESKTOP-I1M4IDV with PID 1996 (E:\IdeaProjects\smart_dormitory_repair\target\classes started by 18417 in E:\IdeaProjects\smart_dormitory_repair)
+12:02:10.691 [main] INFO  c.t.s.SmartDormitoryRepairApplication - No active profile set, falling back to default profiles: default
+12:02:11.770 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12:02:11.989 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+12:02:11.999 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+12:02:11.999 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+12:02:11.999 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+12:02:12.001 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+12:02:12.002 [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12:02:12.002 [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+12:02:12.005 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+12:02:12.087 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+12:02:12.088 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1347 ms
+12:02:13.449 [main] INFO  c.t.s.config.ExecutorServiceConfig - 初始化线程池, 核心线程数量: 8, 最大线程数量: 16, 允许线程空闲时间: 60, 缓冲队列大小: 200
+12:02:13.465 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+12:02:13.773 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+12:02:13.792 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+12:02:13.843 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+12:02:14.310 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+12:02:14.343 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path ''
+12:02:14.351 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Started SmartDormitoryRepairApplication in 4.093 seconds (JVM running for 5.355)
+12:02:14.354 [main] INFO  c.t.s.SmartDormitoryRepairApplication - smart-dormitory启动完成, 耗时: 4201毫秒, swagger地址: http://localhost:8086/swagger-ui.html
+12:02:28.794 [http-nio-8086-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12:02:28.794 [http-nio-8086-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+12:02:28.801 [http-nio-8086-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+12:04:13.576 [http-nio-8086-exec-2] INFO  c.t.s.c.SmartLoginController - pdf生成结果: true
+12:04:20.705 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Starting SmartDormitoryRepairApplication on DESKTOP-I1M4IDV with PID 19228 (E:\IdeaProjects\smart_dormitory_repair\target\classes started by 18417 in E:\IdeaProjects\smart_dormitory_repair)
+12:04:20.708 [main] INFO  c.t.s.SmartDormitoryRepairApplication - No active profile set, falling back to default profiles: default
+12:04:21.769 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12:04:21.995 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+12:04:22.004 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+12:04:22.005 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+12:04:22.005 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+12:04:22.008 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+12:04:22.008 [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12:04:22.008 [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+12:04:22.011 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+12:04:22.113 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+12:04:22.113 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1337 ms
+12:04:23.570 [main] INFO  c.t.s.config.ExecutorServiceConfig - 初始化线程池, 核心线程数量: 8, 最大线程数量: 16, 允许线程空闲时间: 60, 缓冲队列大小: 200
+12:04:23.591 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+12:04:23.928 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+12:04:23.947 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+12:04:23.993 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+12:04:24.291 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+12:04:24.319 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path ''
+12:04:24.323 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Started SmartDormitoryRepairApplication in 4.038 seconds (JVM running for 5.303)
+12:04:24.325 [main] INFO  c.t.s.SmartDormitoryRepairApplication - smart-dormitory启动完成, 耗时: 4136毫秒, swagger地址: http://localhost:8086/swagger-ui.html
+12:04:48.007 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12:04:48.008 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+12:04:48.015 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+12:05:28.214 [http-nio-8086-exec-1] INFO  c.t.s.c.SmartLoginController - pdf生成结果: true
+12:06:03.787 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Starting SmartDormitoryRepairApplication on DESKTOP-I1M4IDV with PID 7288 (E:\IdeaProjects\smart_dormitory_repair\target\classes started by 18417 in E:\IdeaProjects\smart_dormitory_repair)
+12:06:03.791 [main] INFO  c.t.s.SmartDormitoryRepairApplication - No active profile set, falling back to default profiles: default
+12:06:05.015 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12:06:05.251 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+12:06:05.260 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+12:06:05.261 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+12:06:05.262 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+12:06:05.264 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+12:06:05.264 [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12:06:05.265 [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+12:06:05.269 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+12:06:05.350 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+12:06:05.350 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1495 ms
+12:06:06.777 [main] INFO  c.t.s.config.ExecutorServiceConfig - 初始化线程池, 核心线程数量: 8, 最大线程数量: 16, 允许线程空闲时间: 60, 缓冲队列大小: 200
+12:06:06.792 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+12:06:07.120 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+12:06:07.145 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+12:06:07.191 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+12:06:07.454 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+12:06:07.477 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path ''
+12:06:07.480 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Started SmartDormitoryRepairApplication in 4.191 seconds (JVM running for 5.554)
+12:06:07.481 [main] INFO  c.t.s.SmartDormitoryRepairApplication - smart-dormitory启动完成, 耗时: 4301毫秒, swagger地址: http://localhost:8086/swagger-ui.html
+12:06:11.038 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12:06:11.039 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+12:06:11.049 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+12:06:11.774 [http-nio-8086-exec-1] INFO  c.t.s.c.SmartLoginController - pdf生成结果: true
+12:13:17.353 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Starting SmartDormitoryRepairApplication on DESKTOP-I1M4IDV with PID 16080 (E:\IdeaProjects\smart_dormitory_repair\target\classes started by 18417 in E:\IdeaProjects\smart_dormitory_repair)
+12:13:17.356 [main] INFO  c.t.s.SmartDormitoryRepairApplication - No active profile set, falling back to default profiles: default
+12:13:18.296 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12:13:18.475 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+12:13:18.482 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+12:13:18.482 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+12:13:18.482 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+12:13:18.483 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+12:13:18.484 [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12:13:18.484 [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+12:13:18.487 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+12:13:18.559 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+12:13:18.560 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1155 ms
+12:13:19.798 [main] INFO  c.t.s.config.ExecutorServiceConfig - 初始化线程池, 核心线程数量: 8, 最大线程数量: 16, 允许线程空闲时间: 60, 缓冲队列大小: 200
+12:13:19.813 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+12:13:20.019 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+12:13:20.030 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+12:13:20.057 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+12:13:20.246 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+12:13:20.265 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path ''
+12:13:20.268 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Started SmartDormitoryRepairApplication in 3.223 seconds (JVM running for 4.27)
+12:13:20.269 [main] INFO  c.t.s.SmartDormitoryRepairApplication - smart-dormitory启动完成, 耗时: 3299毫秒, swagger地址: http://localhost:8086/swagger-ui.html
+12:13:25.379 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12:13:25.380 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+12:13:25.385 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+12:13:25.979 [http-nio-8086-exec-1] INFO  c.t.s.c.SmartLoginController - pdf生成结果: true
+12:13:27.249 [http-nio-8086-exec-3] INFO  c.t.s.c.SmartLoginController - pdf生成结果: true
+12:22:46.512 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Starting SmartDormitoryRepairApplication on DESKTOP-I1M4IDV with PID 17472 (E:\IdeaProjects\smart_dormitory_repair\target\classes started by 18417 in E:\IdeaProjects\smart_dormitory_repair)
+12:22:46.516 [main] INFO  c.t.s.SmartDormitoryRepairApplication - No active profile set, falling back to default profiles: default
+12:22:47.411 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12:22:47.582 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+12:22:47.588 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+12:22:47.589 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+12:22:47.589 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+12:22:47.590 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+12:22:47.590 [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12:22:47.590 [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+12:22:47.594 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+12:22:47.669 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+12:22:47.669 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1100 ms
+12:22:48.925 [main] INFO  c.t.s.config.ExecutorServiceConfig - 初始化线程池, 核心线程数量: 8, 最大线程数量: 16, 允许线程空闲时间: 60, 缓冲队列大小: 200
+12:22:48.938 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+12:22:49.148 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+12:22:49.159 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+12:22:49.189 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+12:22:49.381 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+12:22:49.400 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path ''
+12:22:49.402 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Started SmartDormitoryRepairApplication in 3.219 seconds (JVM running for 4.24)
+12:22:49.404 [main] INFO  c.t.s.SmartDormitoryRepairApplication - smart-dormitory启动完成, 耗时: 3294毫秒, swagger地址: http://localhost:8086/swagger-ui.html
+12:22:54.509 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12:22:54.509 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+12:22:54.515 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+12:22:55.103 [http-nio-8086-exec-1] INFO  c.t.s.c.SmartLoginController - pdf生成结果: true
+12:24:20.296 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Starting SmartDormitoryRepairApplication on DESKTOP-I1M4IDV with PID 5100 (E:\IdeaProjects\smart_dormitory_repair\target\classes started by 18417 in E:\IdeaProjects\smart_dormitory_repair)
+12:24:20.300 [main] INFO  c.t.s.SmartDormitoryRepairApplication - No active profile set, falling back to default profiles: default
+12:24:21.241 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12:24:21.418 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+12:24:21.427 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+12:24:21.428 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+12:24:21.428 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+12:24:21.429 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+12:24:21.430 [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12:24:21.430 [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+12:24:21.434 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+12:24:21.507 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+12:24:21.507 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1158 ms
+12:24:22.767 [main] INFO  c.t.s.config.ExecutorServiceConfig - 初始化线程池, 核心线程数量: 8, 最大线程数量: 16, 允许线程空闲时间: 60, 缓冲队列大小: 200
+12:24:22.781 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+12:24:22.987 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+12:24:23.000 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+12:24:23.027 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+12:24:23.228 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+12:24:23.247 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path ''
+12:24:23.251 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Started SmartDormitoryRepairApplication in 3.313 seconds (JVM running for 4.356)
+12:24:23.252 [main] INFO  c.t.s.SmartDormitoryRepairApplication - smart-dormitory启动完成, 耗时: 3394毫秒, swagger地址: http://localhost:8086/swagger-ui.html
+12:24:39.352 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12:24:39.353 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+12:24:39.358 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+12:24:39.973 [http-nio-8086-exec-1] INFO  c.t.s.c.SmartLoginController - pdf生成结果: true
+12:39:46.593 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Starting SmartDormitoryRepairApplication on DESKTOP-I1M4IDV with PID 8848 (E:\IdeaProjects\smart_dormitory_repair\target\classes started by 18417 in E:\IdeaProjects\smart_dormitory_repair)
+12:39:46.597 [main] INFO  c.t.s.SmartDormitoryRepairApplication - No active profile set, falling back to default profiles: default
+12:39:47.553 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12:39:47.724 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+12:39:47.731 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+12:39:47.731 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+12:39:47.731 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+12:39:47.733 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+12:39:47.733 [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12:39:47.733 [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+12:39:47.736 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+12:39:47.816 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+12:39:47.816 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1158 ms
+12:39:49.102 [main] INFO  c.t.s.config.ExecutorServiceConfig - 初始化线程池, 核心线程数量: 8, 最大线程数量: 16, 允许线程空闲时间: 60, 缓冲队列大小: 200
+12:39:49.117 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+12:39:49.328 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+12:39:49.340 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+12:39:49.365 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+12:39:49.564 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+12:39:49.583 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path ''
+12:39:49.585 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Started SmartDormitoryRepairApplication in 3.315 seconds (JVM running for 4.343)
+12:39:49.586 [main] INFO  c.t.s.SmartDormitoryRepairApplication - smart-dormitory启动完成, 耗时: 3399毫秒, swagger地址: http://localhost:8086/swagger-ui.html
+12:39:57.589 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12:39:57.590 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+12:39:57.595 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+12:39:58.239 [http-nio-8086-exec-1] INFO  c.t.s.c.SmartLoginController - pdf生成结果: true
+12:39:59.340 [http-nio-8086-exec-2] INFO  c.t.s.c.SmartLoginController - pdf生成结果: true
+12:42:51.042 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Starting SmartDormitoryRepairApplication on DESKTOP-I1M4IDV with PID 17372 (E:\IdeaProjects\smart_dormitory_repair\target\classes started by 18417 in E:\IdeaProjects\smart_dormitory_repair)
+12:42:51.044 [main] INFO  c.t.s.SmartDormitoryRepairApplication - No active profile set, falling back to default profiles: default
+12:42:52.125 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12:42:52.320 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+12:42:52.328 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+12:42:52.329 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+12:42:52.329 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+12:42:52.330 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+12:42:52.331 [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12:42:52.331 [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+12:42:52.334 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+12:42:52.411 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+12:42:52.412 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1325 ms
+12:42:53.837 [main] INFO  c.t.s.config.ExecutorServiceConfig - 初始化线程池, 核心线程数量: 8, 最大线程数量: 16, 允许线程空闲时间: 60, 缓冲队列大小: 200
+12:42:53.854 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+12:42:54.085 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+12:42:54.100 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+12:42:54.129 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+12:42:54.335 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+12:42:54.354 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path ''
+12:42:54.356 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Started SmartDormitoryRepairApplication in 3.685 seconds (JVM running for 4.878)
+12:42:54.358 [main] INFO  c.t.s.SmartDormitoryRepairApplication - smart-dormitory启动完成, 耗时: 3781毫秒, swagger地址: http://localhost:8086/swagger-ui.html
+12:43:00.001 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12:43:00.001 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+12:43:00.006 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+12:43:00.636 [http-nio-8086-exec-1] INFO  c.t.s.c.SmartLoginController - pdf生成结果: true
+12:43:00.706 [http-nio-8086-exec-1] INFO  c.t.s.c.SmartLoginController - pdf生成结果: true
+12:44:03.284 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Starting SmartDormitoryRepairApplication on DESKTOP-I1M4IDV with PID 16180 (E:\IdeaProjects\smart_dormitory_repair\target\classes started by 18417 in E:\IdeaProjects\smart_dormitory_repair)
+12:44:03.287 [main] INFO  c.t.s.SmartDormitoryRepairApplication - No active profile set, falling back to default profiles: default
+12:44:04.222 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12:44:04.399 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+12:44:04.405 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+12:44:04.406 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+12:44:04.406 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+12:44:04.407 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+12:44:04.407 [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12:44:04.407 [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+12:44:04.411 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+12:44:04.484 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+12:44:04.484 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1146 ms
+12:44:05.772 [main] INFO  c.t.s.config.ExecutorServiceConfig - 初始化线程池, 核心线程数量: 8, 最大线程数量: 16, 允许线程空闲时间: 60, 缓冲队列大小: 200
+12:44:05.786 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+12:44:06.007 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+12:44:06.020 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+12:44:06.052 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+12:44:06.275 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+12:44:06.295 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path ''
+12:44:06.297 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Started SmartDormitoryRepairApplication in 3.341 seconds (JVM running for 4.396)
+12:44:06.298 [main] INFO  c.t.s.SmartDormitoryRepairApplication - smart-dormitory启动完成, 耗时: 3407毫秒, swagger地址: http://localhost:8086/swagger-ui.html
+12:44:11.407 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12:44:11.407 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+12:44:11.412 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+12:44:11.999 [http-nio-8086-exec-1] INFO  c.t.s.c.SmartLoginController - pdf生成结果: true
+12:44:12.123 [http-nio-8086-exec-1] INFO  c.t.s.c.SmartLoginController - pdf生成结果: true
+12:44:13.742 [http-nio-8086-exec-3] INFO  c.t.s.c.SmartLoginController - pdf生成结果: true
+12:44:13.797 [http-nio-8086-exec-3] INFO  c.t.s.c.SmartLoginController - pdf生成结果: true
+12:47:47.048 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Starting SmartDormitoryRepairApplication on DESKTOP-I1M4IDV with PID 3744 (E:\IdeaProjects\smart_dormitory_repair\target\classes started by 18417 in E:\IdeaProjects\smart_dormitory_repair)
+12:47:47.051 [main] INFO  c.t.s.SmartDormitoryRepairApplication - No active profile set, falling back to default profiles: default
+12:47:47.978 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12:47:48.146 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+12:47:48.155 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+12:47:48.155 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+12:47:48.155 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+12:47:48.156 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+12:47:48.157 [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12:47:48.157 [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+12:47:48.159 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+12:47:48.236 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+12:47:48.237 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1139 ms
+12:47:49.498 [main] INFO  c.t.s.config.ExecutorServiceConfig - 初始化线程池, 核心线程数量: 8, 最大线程数量: 16, 允许线程空闲时间: 60, 缓冲队列大小: 200
+12:47:49.512 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+12:47:49.714 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+12:47:49.725 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+12:47:49.753 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+12:47:49.948 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+12:47:49.967 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path ''
+12:47:49.969 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Started SmartDormitoryRepairApplication in 3.247 seconds (JVM running for 4.273)
+12:47:49.970 [main] INFO  c.t.s.SmartDormitoryRepairApplication - smart-dormitory启动完成, 耗时: 3318毫秒, swagger地址: http://localhost:8086/swagger-ui.html
+12:47:55.241 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12:47:55.241 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+12:47:55.247 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+12:47:55.819 [http-nio-8086-exec-1] INFO  c.t.s.c.SmartLoginController - pdf生成结果: true
+12:47:55.904 [http-nio-8086-exec-1] INFO  c.t.s.c.SmartLoginController - pdf生成结果: true
+12:47:57.112 [http-nio-8086-exec-3] INFO  c.t.s.c.SmartLoginController - pdf生成结果: true
+12:47:57.166 [http-nio-8086-exec-3] INFO  c.t.s.c.SmartLoginController - pdf生成结果: true
+13:17:21.727 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Starting SmartDormitoryRepairApplication on DESKTOP-I1M4IDV with PID 16704 (E:\IdeaProjects\smart_dormitory_repair\target\classes started by 18417 in E:\IdeaProjects\smart_dormitory_repair)
+13:17:21.730 [main] INFO  c.t.s.SmartDormitoryRepairApplication - No active profile set, falling back to default profiles: default
+13:17:22.684 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:17:22.860 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+13:17:22.867 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+13:17:22.868 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+13:17:22.868 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+13:17:22.869 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+13:17:22.870 [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+13:17:22.870 [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+13:17:22.873 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+13:17:22.963 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+13:17:22.963 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1192 ms
+13:17:24.242 [main] INFO  c.t.s.config.ExecutorServiceConfig - 初始化线程池, 核心线程数量: 8, 最大线程数量: 16, 允许线程空闲时间: 60, 缓冲队列大小: 200
+13:17:24.259 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+13:17:24.501 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+13:17:24.514 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+13:17:24.543 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+13:17:24.765 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+13:17:24.785 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path ''
+13:17:24.788 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Started SmartDormitoryRepairApplication in 3.424 seconds (JVM running for 4.526)
+13:17:24.790 [main] INFO  c.t.s.SmartDormitoryRepairApplication - smart-dormitory启动完成, 耗时: 3496毫秒, swagger地址: http://localhost:8086/swagger-ui.html
+13:17:35.542 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+13:17:35.543 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+13:17:35.548 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+13:17:35.711 [http-nio-8086-exec-1] INFO  c.t.s.c.SmartLoginController - 保存结果: true
+13:17:35.852 [http-nio-8086-exec-1] INFO  c.t.s.c.SmartLoginController - 解析结果: 526f7a3f-9cea-4c31-b30d-66f55d970e6b
+13:18:10.369 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Starting SmartDormitoryRepairApplication on DESKTOP-I1M4IDV with PID 17692 (E:\IdeaProjects\smart_dormitory_repair\target\classes started by 18417 in E:\IdeaProjects\smart_dormitory_repair)
+13:18:10.372 [main] INFO  c.t.s.SmartDormitoryRepairApplication - No active profile set, falling back to default profiles: default
+13:18:11.277 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:18:11.469 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+13:18:11.478 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+13:18:11.478 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+13:18:11.479 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+13:18:11.480 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+13:18:11.481 [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+13:18:11.481 [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+13:18:11.484 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+13:18:11.560 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+13:18:11.560 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1139 ms
+13:18:12.960 [main] INFO  c.t.s.config.ExecutorServiceConfig - 初始化线程池, 核心线程数量: 8, 最大线程数量: 16, 允许线程空闲时间: 60, 缓冲队列大小: 200
+13:18:12.978 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+13:18:13.280 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+13:18:13.293 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+13:18:13.324 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+13:18:13.579 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+13:18:13.600 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path ''
+13:18:13.602 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Started SmartDormitoryRepairApplication in 3.576 seconds (JVM running for 4.634)
+13:18:13.604 [main] INFO  c.t.s.SmartDormitoryRepairApplication - smart-dormitory启动完成, 耗时: 3659毫秒, swagger地址: http://localhost:8086/swagger-ui.html
+13:18:46.450 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+13:18:46.451 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+13:18:46.458 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+13:18:46.637 [http-nio-8086-exec-1] INFO  c.t.s.c.SmartLoginController - 保存结果: true
+13:18:46.791 [http-nio-8086-exec-1] INFO  c.t.s.c.SmartLoginController - 解析结果: 18a39694-1e38-4fbd-92d1-482c50d2e206
+13:27:26.882 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Starting SmartDormitoryRepairApplication on DESKTOP-I1M4IDV with PID 10968 (E:\IdeaProjects\smart_dormitory_repair\target\classes started by 18417 in E:\IdeaProjects\smart_dormitory_repair)
+13:27:26.885 [main] INFO  c.t.s.SmartDormitoryRepairApplication - No active profile set, falling back to default profiles: default
+13:27:27.802 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:27:27.974 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+13:27:27.981 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+13:27:27.981 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+13:27:27.981 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+13:27:27.982 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+13:27:27.983 [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+13:27:27.983 [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+13:27:27.986 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+13:27:28.065 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+13:27:28.066 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1129 ms
+13:27:29.339 [main] INFO  c.t.s.config.ExecutorServiceConfig - 初始化线程池, 核心线程数量: 8, 最大线程数量: 16, 允许线程空闲时间: 60, 缓冲队列大小: 200
+13:27:29.353 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+13:27:29.579 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+13:27:29.590 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+13:27:29.617 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+13:27:29.829 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+13:27:29.849 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path ''
+13:27:29.851 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Started SmartDormitoryRepairApplication in 3.292 seconds (JVM running for 4.379)
+13:27:29.853 [main] INFO  c.t.s.SmartDormitoryRepairApplication - smart-dormitory启动完成, 耗时: 3363毫秒, swagger地址: http://localhost:8086/swagger-ui.html
+13:27:40.659 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+13:27:40.659 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+13:27:40.664 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+13:27:40.844 [http-nio-8086-exec-1] INFO  c.t.s.c.SmartLoginController - 保存结果: true
+13:27:40.996 [http-nio-8086-exec-1] INFO  c.t.s.c.SmartLoginController - 解析结果: 10268937-7135-4f15-ad31-8ce851ebf02b
+13:32:24.906 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Starting SmartDormitoryRepairApplication on DESKTOP-I1M4IDV with PID 6712 (E:\IdeaProjects\smart_dormitory_repair\target\classes started by 18417 in E:\IdeaProjects\smart_dormitory_repair)
+13:32:24.909 [main] INFO  c.t.s.SmartDormitoryRepairApplication - No active profile set, falling back to default profiles: default
+13:32:25.843 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:32:26.013 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+13:32:26.020 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+13:32:26.020 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+13:32:26.020 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+13:32:26.022 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+13:32:26.022 [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+13:32:26.022 [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+13:32:26.024 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+13:32:26.104 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+13:32:26.104 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1141 ms
+13:32:27.412 [main] INFO  c.t.s.config.ExecutorServiceConfig - 初始化线程池, 核心线程数量: 8, 最大线程数量: 16, 允许线程空闲时间: 60, 缓冲队列大小: 200
+13:32:27.428 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+13:32:27.647 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+13:32:27.658 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+13:32:27.686 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+13:32:27.895 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+13:32:27.916 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path ''
+13:32:27.919 [main] INFO  c.t.s.SmartDormitoryRepairApplication - Started SmartDormitoryRepairApplication in 3.371 seconds (JVM running for 4.431)
+13:32:27.921 [main] INFO  c.t.s.SmartDormitoryRepairApplication - smart-dormitory启动完成, 耗时: 3449毫秒, swagger地址: http://localhost:8086/swagger-ui.html
+13:32:34.641 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+13:32:34.641 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+13:32:34.646 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+13:32:34.827 [http-nio-8086-exec-1] INFO  c.t.s.c.SmartLoginController - 保存结果: true
+13:32:35.000 [http-nio-8086-exec-1] INFO  c.t.s.c.SmartLoginController - 解析结果: 347b6d19-7023-42c6-b513-db57521b9742
+13:32:37.915 [http-nio-8086-exec-2] INFO  c.t.s.c.SmartLoginController - 保存结果: true
+13:32:37.978 [http-nio-8086-exec-2] INFO  c.t.s.c.SmartLoginController - 解析结果: 85d0e138-1e0c-42c0-ab96-212e0f77c6b7
+13:32:38.879 [http-nio-8086-exec-3] INFO  c.t.s.c.SmartLoginController - 保存结果: true
+13:32:38.942 [http-nio-8086-exec-3] INFO  c.t.s.c.SmartLoginController - 解析结果: 11933918-1c3d-47ab-9644-45911e8867e9
+13:32:39.377 [http-nio-8086-exec-4] INFO  c.t.s.c.SmartLoginController - 保存结果: true
+13:32:39.439 [http-nio-8086-exec-4] INFO  c.t.s.c.SmartLoginController - 解析结果: 9e0898a0-7f5d-4b2b-ab67-252591401b44
+13:32:39.829 [http-nio-8086-exec-5] INFO  c.t.s.c.SmartLoginController - 保存结果: true
+13:32:39.876 [http-nio-8086-exec-5] INFO  c.t.s.c.SmartLoginController - 解析结果: 95b18565-a631-48af-8445-e5294a134d0b
