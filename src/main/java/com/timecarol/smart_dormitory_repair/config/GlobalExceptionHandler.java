@@ -1,15 +1,18 @@
 package com.timecarol.smart_dormitory_repair.config;
 
+import cn.dev33.satoken.exception.NotLoginException;
 import cn.dev33.satoken.exception.SaTokenException;
 import cn.hutool.core.date.DateUtil;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.timecarol.smart_dormitory_repair.exception.BusinessException;
 import com.timecarol.smart_dormitory_repair.util.SimpleResponse;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.MissingServletRequestParameterException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.ResponseStatus;
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -21,6 +24,13 @@ import java.sql.SQLException;
 @ControllerAdvice
 @ResponseBody
 public class GlobalExceptionHandler {
+
+    @ExceptionHandler(NotLoginException.class)
+    @ResponseStatus(value = HttpStatus.UNAUTHORIZED)
+    public SimpleResponse<Object> handleNotLoginException(NotLoginException e) {
+        log.info("发生异常, localTime: {}, time: {}, 异常信息: {}", DateUtil.now(), DateUtil.current(), e.toString());
+        return SimpleResponse.error(HttpStatus.UNAUTHORIZED.value(), e.getLocalizedMessage());
+    }
 
     @ExceptionHandler(SaTokenException.class)
     public SimpleResponse<Object> handleSaTokenException(SaTokenException e) {
