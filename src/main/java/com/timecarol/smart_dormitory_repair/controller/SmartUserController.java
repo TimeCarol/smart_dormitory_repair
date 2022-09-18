@@ -30,15 +30,15 @@ public class SmartUserController extends BaseController {
     @GetMapping("/query")
     @ApiOperation("SmartUser查询单个")
     public SimpleResponse<SmartUserDto> query(@RequestParam("id") Long id,
-                                             @RequestParam("username") String username,
-                                             @RequestParam("phone") String phone) {
+                                              @RequestParam("username") String username,
+                                              @RequestParam("phone") String phone) {
         SmartUserVo vo = new SmartUserVo();
         vo.setId(id);
         vo.setUsername(username);
         vo.setPhone(phone);
-        //根据id进行查询
+//根据id进行查询
         SmartUserDto dto = smartUserService.query(vo);
-        //去掉密码
+//去掉密码
         dto.setPassword("");
         return new SimpleResponse<>(dto);
     }

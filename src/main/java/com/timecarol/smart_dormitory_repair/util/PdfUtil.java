@@ -1,21 +1,16 @@
 package com.timecarol.smart_dormitory_repair.util;
 
-import com.itextpdf.text.BaseColor;
-import com.itextpdf.text.Font;
 import com.itextpdf.text.pdf.BaseFont;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
 import io.swagger.annotations.ApiModelProperty;
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.w3c.dom.Document;
 import org.xhtmlrenderer.pdf.ITextFontResolver;
 import org.xhtmlrenderer.pdf.ITextRenderer;
 
 import java.io.*;
-import java.util.Base64;
 import java.util.Map;
 import java.util.UUID;
 
@@ -32,6 +27,7 @@ public class PdfUtil {
     /**
      * 根据pdf参数生成pdf<br>
      * Notice: pdf文件用完后别忘记删除
+     *
      * @param param pdf参数
      * @return 输入流
      */
@@ -51,6 +47,7 @@ public class PdfUtil {
     /**
      * 根据pdf参数生成pdf<br>
      * Notice: pdf文件用完后别忘记删除
+     *
      * @param param pdf参数
      * @return 是否生成成功
      */
@@ -132,8 +129,8 @@ public class PdfUtil {
     }
 
     /**
-     * @Description: 生成PDF参数
      * @author timecarol
+     * @Description: 生成PDF参数
      * @date 2022年9月4日
      */
     @Data

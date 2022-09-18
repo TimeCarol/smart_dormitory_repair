@@ -1,23 +1,22 @@
 package com.timecarol.smart_dormitory_repair.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
-
-import com.baomidou.mybatisplus.annotation.TableField;
-
-import java.io.Serializable;
-import java.util.Date;
-
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.timecarol.smart_dormitory_repair.vo.SmartUserVo;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import org.springframework.beans.BeanUtils;
+
+import java.io.Serializable;
+import java.util.Date;
+import java.util.Objects;
 
 /**
  * @author timecarol
@@ -83,7 +82,7 @@ public class SmartUser implements Serializable {
     public static final String ROLE_ID = "role_id";
 
     public static SmartUser toEntity(SmartUserVo vo) {
-        if (vo == null) {
+        if (Objects.isNull(vo)) {
             return null;
         }
         SmartUser smartUser = new SmartUser();

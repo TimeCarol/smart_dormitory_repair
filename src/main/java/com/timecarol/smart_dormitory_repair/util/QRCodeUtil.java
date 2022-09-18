@@ -142,8 +142,9 @@ public class QRCodeUtil {
 
     /**
      * 创建不带标题的二维码
-     * @param content 二维码的内容
-     * @param qrWidth 二维码的宽度
+     *
+     * @param content  二维码的内容
+     * @param qrWidth  二维码的宽度
      * @param qrHeight 二维码的高度
      * @return
      */
@@ -371,6 +372,7 @@ public class QRCodeUtil {
 
     /**
      * 解析二维码, 解析完成后会自动关闭流
+     *
      * @param inputStream
      * @return 解析后的结果
      */
@@ -380,8 +382,9 @@ public class QRCodeUtil {
 
     /**
      * 解析二维码, 解析完成后会自动关闭流
+     *
      * @param inputStream 二维码输入流
-     * @param charSet 编码
+     * @param charSet     编码
      * @return 解析后的结果
      */
     public static String decode(InputStream inputStream, String charSet) {
@@ -406,6 +409,7 @@ public class QRCodeUtil {
 
     /**
      * 解析二维码
+     *
      * @param image 图片
      * @return 解析后的结果
      */
@@ -415,7 +419,8 @@ public class QRCodeUtil {
 
     /**
      * 解析二维码
-     * @param image 图片
+     *
+     * @param image   图片
      * @param charSet 编码
      * @return 解析后的结果
      */
@@ -439,6 +444,7 @@ public class QRCodeUtil {
 
     /**
      * 解析二维码
+     *
      * @param file 文件
      * @return 解析后的结果
      */
@@ -485,6 +491,7 @@ public class QRCodeUtil {
 
     /**
      * BufferedImage转换成前端可用的图片Base64编码
+     *
      * @param image 图片
      * @return 返回Base64编码后的结果, 可以在<img src="">的src中
      */
@@ -494,6 +501,7 @@ public class QRCodeUtil {
 
     /**
      * BufferedImage转Base64
+     *
      * @param image 图片
      * @return 返回Base64编码后的结果
      */
@@ -516,8 +524,9 @@ public class QRCodeUtil {
 
     /**
      * 将BufferedImage保存到本地
+     *
      * @param filePath 文件路径
-     * @param image 图片
+     * @param image    图片
      * @return 返回是否保存成功
      */
     public static boolean saveBufferedImage(String filePath, BufferedImage image) {
@@ -536,6 +545,7 @@ public class QRCodeUtil {
 
     /**
      * Description: 基础的图片生成类
+     *
      * @Author timecarol
      * @Date 2022/9/4
      * @Version 1.0

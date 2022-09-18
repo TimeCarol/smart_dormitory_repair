@@ -77,7 +77,7 @@ public class CodeGenerator {
         focList.add(new FileOutConfig("/templates/service.java.ftl") {
             @Override
             public String outputFile(TableInfo tableInfo) {
-                return projectPath + path +  "/service/" + tableInfo.getServiceName() + StringPool.DOT_JAVA;
+                return projectPath + path + "/service/" + tableInfo.getServiceName() + StringPool.DOT_JAVA;
             }
         });
         focList.add(new FileOutConfig("/templates/serviceImpl.java.ftl") {

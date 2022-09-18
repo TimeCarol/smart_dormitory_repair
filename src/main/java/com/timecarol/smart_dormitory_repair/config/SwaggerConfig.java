@@ -21,7 +21,7 @@ import java.util.List;
 public class SwaggerConfig {
 
     @Bean
-    public Docket webApiConfig(){
+    public Docket webApiConfig() {
 
         //添加head参数start
         List<Parameter> pars = new ArrayList<>();
@@ -52,8 +52,7 @@ public class SwaggerConfig {
     }
 
 
-
-    private ApiInfo webApiInfo(){
+    private ApiInfo webApiInfo() {
 
         return new ApiInfoBuilder()
                 .title("网站-API文档")
@@ -63,7 +62,7 @@ public class SwaggerConfig {
                 .build();
     }
 
-    private ApiInfo adminApiInfo(){
+    private ApiInfo adminApiInfo() {
 
         return new ApiInfoBuilder()
                 .title("后台管理系统-API文档")

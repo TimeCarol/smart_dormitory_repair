@@ -5,12 +5,12 @@ import cn.hutool.core.util.StrUtil;
 import com.alibaba.fastjson.JSON;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.timecarol.smart_dormitory_repair.dto.response.SmartUserDto;
 import com.timecarol.smart_dormitory_repair.entity.SmartUser;
 import com.timecarol.smart_dormitory_repair.exception.BusinessException;
 import com.timecarol.smart_dormitory_repair.mapper.SmartUserMapper;
 import com.timecarol.smart_dormitory_repair.service.ISmartUserService;
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.timecarol.smart_dormitory_repair.vo.SmartUserVo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -107,7 +107,7 @@ public class SmartUserServiceImpl extends ServiceImpl<SmartUserMapper, SmartUser
             throw new BusinessException(HttpStatus.PAYMENT_REQUIRED, "手机号不允许为空");
         }
         //校验手机格式
-        String regPattern =  "^((13[0-9])|(14[5,7,9])|(15([0-3]|[5-9]))|(166)|(17[0,1,3,5,6,7,8])|(18[0-9])|(19[8|9]))\\d{8}$";
+        String regPattern = "^((13[0-9])|(14[5,7,9])|(15([0-3]|[5-9]))|(166)|(17[0,1,3,5,6,7,8])|(18[0-9])|(19[8|9]))\\d{8}$";
         Pattern pattern = Pattern.compile(regPattern);
         Matcher matcher = pattern.matcher(vo.getPhone());
         boolean isMatch = matcher.matches();

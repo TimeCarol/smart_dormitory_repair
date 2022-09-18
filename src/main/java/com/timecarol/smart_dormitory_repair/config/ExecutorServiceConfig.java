@@ -22,11 +22,11 @@ public class ExecutorServiceConfig {
         int keepAliveTime = 60; //允许线程空闲时间
         log.info("初始化线程池, 核心线程数量: {}, 最大线程数量: {}, 允许线程空闲时间: {}, 缓冲队列大小: {}", corePoolSize, maximumPoolSize, keepAliveTime, queueCapacity);
         return new ThreadPoolExecutor(corePoolSize,
-                                maximumPoolSize,
-                                keepAliveTime,
-                                TimeUnit.SECONDS,
-                                new LinkedBlockingQueue<>(queueCapacity),
-                                Executors.defaultThreadFactory(),
-                                new ThreadPoolExecutor.CallerRunsPolicy());
+                maximumPoolSize,
+                keepAliveTime,
+                TimeUnit.SECONDS,
+                new LinkedBlockingQueue<>(queueCapacity),
+                Executors.defaultThreadFactory(),
+                new ThreadPoolExecutor.CallerRunsPolicy());
     }
 }

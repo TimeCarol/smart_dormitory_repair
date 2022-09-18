@@ -11,7 +11,8 @@ public class BusinessException extends RuntimeException {
 
     private String msg;
 
-    public BusinessException() {}
+    public BusinessException() {
+    }
 
     public BusinessException(HttpStatus status, String msg) {
         super(msg);

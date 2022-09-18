@@ -3,7 +3,6 @@ package com.timecarol.smart_dormitory_repair.config;
 import cn.dev33.satoken.exception.NotLoginException;
 import cn.dev33.satoken.exception.SaTokenException;
 import cn.hutool.core.date.DateUtil;
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.timecarol.smart_dormitory_repair.exception.BusinessException;
 import com.timecarol.smart_dormitory_repair.util.SimpleResponse;
 import lombok.extern.slf4j.Slf4j;

@@ -2,35 +2,20 @@ package com.timecarol.smart_dormitory_repair.controller;
 
 import cn.dev33.satoken.stp.SaTokenInfo;
 import cn.dev33.satoken.stp.StpUtil;
-import cn.hutool.captcha.CaptchaUtil;
-import cn.hutool.captcha.ShearCaptcha;
-import cn.hutool.core.date.DateUtil;
 import com.alibaba.fastjson.JSON;
 import com.timecarol.smart_dormitory_repair.dto.response.SmartUserDto;
 import com.timecarol.smart_dormitory_repair.exception.BusinessException;
 import com.timecarol.smart_dormitory_repair.service.ISmartUserService;
-import com.timecarol.smart_dormitory_repair.util.PdfUtil;
-import com.timecarol.smart_dormitory_repair.util.QRCodeUtil;
 import com.timecarol.smart_dormitory_repair.util.SimpleResponse;
 import com.timecarol.smart_dormitory_repair.vo.SmartUserVo;
 import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.web.bind.annotation.*;
-
-import javax.imageio.ImageIO;
-import javax.servlet.ServletOutputStream;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import java.awt.image.BufferedImage;
-import java.io.*;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.UUID;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
 
 @Slf4j
 @Api(description = "登录控制器")
