@@ -1,6 +1,7 @@
 package com.timecarol.smart_dormitory_repair.vo;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.timecarol.smart_dormitory_repair.dto.response.SmartUserDto;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
@@ -8,7 +9,7 @@ import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
 @Data
-public class SmartUserVo extends Page<SmartUserVo> implements Serializable {
+public class SmartUserVo extends Page<SmartUserDto> implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @ApiModelProperty("主键")
@@ -36,13 +37,4 @@ public class SmartUserVo extends Page<SmartUserVo> implements Serializable {
     @ApiModelProperty("页大小")
     private Long pageSize;
 
-    public void setPageIndex(Long pageIndex) {
-        this.pageIndex = pageIndex;
-        super.setCurrent(pageIndex);
-    }
-
-    public void setPageSize(Long pageSize) {
-        this.pageSize = pageSize;
-        super.setSize(pageSize);
-    }
 }

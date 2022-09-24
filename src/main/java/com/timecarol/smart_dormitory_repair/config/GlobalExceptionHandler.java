@@ -43,6 +43,12 @@ public class GlobalExceptionHandler {
         return SimpleResponse.error(e.getLocalizedMessage());
     }
 
+    @ExceptionHandler(IllegalArgumentException.class)
+    public SimpleResponse<Object> handlerIllegalArgumentException(IllegalArgumentException e) {
+        log.info("发生异常, localTime: {}, time: {}, 异常信息: {}", DateUtil.now(), DateUtil.current(), e.toString());
+        return SimpleResponse.error(e.getLocalizedMessage());
+    }
+
     @ExceptionHandler(NullPointerException.class)
     public SimpleResponse<Object> handleNullPointerException(NullPointerException e) {
         log.info("发生异常, localTime: {}, time: {}, 异常信息: {}", DateUtil.now(), DateUtil.current(), e.toString());

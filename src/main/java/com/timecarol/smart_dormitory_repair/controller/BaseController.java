@@ -61,17 +61,17 @@ public class BaseController {
         //定义图形验证码的长、宽、验证码字符数、干扰线宽度
         ShearCaptcha captcha = CaptchaUtil.createShearCaptcha(200, 100, 4, 4);
         //ShearCaptcha captcha = new ShearCaptcha(200, 100, 4, 4);
-//告诉浏览器，这个请求用图片的方式打开
+        //告诉浏览器，这个请求用图片的方式打开
         res.setContentType("image/jpeg");
-//网站存在缓存，不让浏览器缓存
+        //网站存在缓存，不让浏览器缓存
         res.setDateHeader("empires", -1);
         res.setHeader("Cache-Control", "no-cache");
         res.setHeader("Pragma", "no-cache");
-//图形验证码写出，可以写出到文件，也可以写出到流
+        //图形验证码写出，可以写出到文件，也可以写出到流
         captcha.write(res.getOutputStream());
-//将验证码保存至Session
+        //将验证码保存至Session
         req.getSession().setAttribute("verifyCode", captcha.getCode());
-//关闭输出流
+        //关闭输出流
         res.getOutputStream().close();
     }
 

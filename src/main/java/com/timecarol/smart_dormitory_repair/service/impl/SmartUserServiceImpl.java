@@ -1,10 +1,12 @@
 package com.timecarol.smart_dormitory_repair.service.impl;
 
+import cn.hutool.core.collection.CollectionUtil;
 import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.util.StrUtil;
 import com.alibaba.fastjson.JSON;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.timecarol.smart_dormitory_repair.dto.response.SmartUserDto;
 import com.timecarol.smart_dormitory_repair.entity.SmartUser;
@@ -18,7 +20,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -41,10 +42,12 @@ public class SmartUserServiceImpl extends ServiceImpl<SmartUserMapper, SmartUser
     }
 
     @Override
-    public List<SmartUserDto> pageList(SmartUserVo vo) {
-        List<SmartUserDto> list = baseMapper.pageList(vo);
-        //去掉密码
-        list.forEach(item -> item.setPassword(""));
+    public IPage<SmartUserDto> pageList(SmartUserVo vo) {
+        IPage<SmartUserDto> list = baseMapper.pageList(vo);
+        if (CollectionUtil.isNotEmpty(list.getRecords())) {
+            //去掉密码
+            list.getRecords().forEach(item -> item.setPassword(""));
+        }
         return list;
     }
 
