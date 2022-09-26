@@ -3,6 +3,7 @@ package com.timecarol.smart_dormitory_repair.controller;
 
 import cn.dev33.satoken.stp.StpUtil;
 import com.alibaba.fastjson.JSON;
+import com.timecarol.smart_dormitory_repair.constant.Constant;
 import com.timecarol.smart_dormitory_repair.dto.response.SmartUserDto;
 import com.timecarol.smart_dormitory_repair.exception.BusinessException;
 import io.swagger.annotations.Api;
@@ -16,7 +17,7 @@ import org.springframework.stereotype.Controller;
 public class BaseController {
 
     public SmartUserDto getSmartUser() {
-        Object smartUser = StpUtil.getTokenSession().get("SmartUser");
+        Object smartUser = StpUtil.getTokenSession().get(Constant.SMART_USER);
         if (smartUser == null) {
             throw new BusinessException(HttpStatus.UNAUTHORIZED, "您还没有登录");
         }

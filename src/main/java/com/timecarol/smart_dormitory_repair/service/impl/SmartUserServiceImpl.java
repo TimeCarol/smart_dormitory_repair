@@ -117,6 +117,8 @@ public class SmartUserServiceImpl extends ServiceImpl<SmartUserMapper, SmartUser
         entity.setCreateTime(null);
         boolean isSuccess = updateById(entity);
         log.info("修改密码完成, query: {}, res: {}, localTime: {}, time: {}", JSON.toJSONString(query), isSuccess, DateUtil.now(), DateUtil.current());
+        //去掉密码
+        query.setPassword("");
         return query;
     }
 

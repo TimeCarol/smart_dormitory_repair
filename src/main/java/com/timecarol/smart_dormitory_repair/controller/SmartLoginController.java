@@ -3,6 +3,7 @@ package com.timecarol.smart_dormitory_repair.controller;
 import cn.dev33.satoken.stp.SaTokenInfo;
 import cn.dev33.satoken.stp.StpUtil;
 import com.alibaba.fastjson.JSON;
+import com.timecarol.smart_dormitory_repair.constant.Constant;
 import com.timecarol.smart_dormitory_repair.dto.response.SmartUserDto;
 import com.timecarol.smart_dormitory_repair.exception.BusinessException;
 import com.timecarol.smart_dormitory_repair.service.ISmartUserService;
@@ -51,7 +52,7 @@ public class SmartLoginController {
         //去掉密码
         smartUser.setPassword("");
         //将用户信息缓存到session中
-        StpUtil.getTokenSessionByToken(tokenInfo.tokenValue).set("SmartUser", JSON.toJSONString(smartUser));
+        StpUtil.getTokenSessionByToken(tokenInfo.tokenValue).set(Constant.SMART_USER, JSON.toJSONString(smartUser));
         return new SimpleResponse<>(tokenInfo);
     }
 

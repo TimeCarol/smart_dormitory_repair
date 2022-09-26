@@ -5,6 +5,8 @@ public class Constant {
     private Constant() {
     }
 
+    public static final String SMART_USER = "SmartUser";
+
     public static final long ONE_SECOND = 1000L;
 
     public static final long ONE_MINUTE = 60000L;
