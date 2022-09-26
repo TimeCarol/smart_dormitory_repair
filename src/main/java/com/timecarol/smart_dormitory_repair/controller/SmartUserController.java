@@ -46,7 +46,7 @@ public class SmartUserController extends BaseController {
 
     @PostMapping("/list")
     @ApiOperation("SmartUser查询全部")
-    public SimpleResponse<IPage<SmartUserDto>> pageList(SmartUserVo vo) {
+    public SimpleResponse<IPage<SmartUserDto>> pageList(@RequestBody SmartUserVo vo) {
         return new SimpleResponse<>(smartUserService.pageList(vo));
     }
 

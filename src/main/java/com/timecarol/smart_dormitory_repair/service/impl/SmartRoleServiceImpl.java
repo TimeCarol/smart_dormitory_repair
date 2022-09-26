@@ -5,12 +5,16 @@ import com.alibaba.fastjson.JSON;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.timecarol.smart_dormitory_repair.dto.response.SmartRoleDto;
+import com.timecarol.smart_dormitory_repair.dto.response.SmartUserDto;
 import com.timecarol.smart_dormitory_repair.entity.SmartRole;
 import com.timecarol.smart_dormitory_repair.exception.BusinessException;
 import com.timecarol.smart_dormitory_repair.mapper.SmartRoleMapper;
 import com.timecarol.smart_dormitory_repair.service.ISmartRoleService;
+import com.timecarol.smart_dormitory_repair.service.ISmartUserService;
 import com.timecarol.smart_dormitory_repair.vo.SmartRoleVo;
+import com.timecarol.smart_dormitory_repair.vo.SmartUserVo;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -29,6 +33,8 @@ import java.util.Objects;
 @Transactional
 public class SmartRoleServiceImpl extends ServiceImpl<SmartRoleMapper, SmartRole> implements ISmartRoleService {
 
+    @Autowired
+    ISmartUserService smartUserService;
 
     @Override
     public SmartRoleDto query(SmartRoleVo vo) {
@@ -79,5 +85,20 @@ public class SmartRoleServiceImpl extends ServiceImpl<SmartRoleMapper, SmartRole
         entity.setCreateTime(null);
         updateById(entity);
         return SmartRoleDto.toDto(entity);
+    }
+
+    @Override
+    public SmartRoleDto queryByUser(SmartUserVo vo) {
+        SmartUserDto query = smartUserService.query(vo);
+        if (Objects.isNull(query)) {
+            throw new BusinessException(HttpStatus.EXPECTATION_FAILED, "用户信息未找到");
+        }
+        SmartRoleVo roleVo = new SmartRoleVo();
+        roleVo.setId(query.getRoleId());
+        SmartRoleDto roleDto = query(roleVo);
+        if (Objects.isNull(roleDto)) {
+            throw new BusinessException(HttpStatus.EXPECTATION_FAILED, "角色信息未找到");
+        }
+        return roleDto;
     }
 }

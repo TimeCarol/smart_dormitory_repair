@@ -5,6 +5,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
 import com.timecarol.smart_dormitory_repair.dto.response.SmartRoleDto;
 import com.timecarol.smart_dormitory_repair.entity.SmartRole;
 import com.timecarol.smart_dormitory_repair.vo.SmartRoleVo;
+import com.timecarol.smart_dormitory_repair.vo.SmartUserVo;
 
 /**
  * @author timecarol
@@ -20,6 +21,8 @@ public interface ISmartRoleService extends IService<SmartRole> {
     SmartRoleDto edit(SmartRoleVo vo);
 
     SmartRoleDto del(SmartRoleVo vo);
+
+    SmartRoleDto queryByUser(SmartUserVo vo);
 }
 
 
