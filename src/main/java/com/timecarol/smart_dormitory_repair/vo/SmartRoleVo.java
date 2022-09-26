@@ -53,6 +53,21 @@ public class SmartRoleVo extends Page<SmartRoleDto> implements Serializable {
     @TableField("update_time")
     private Date updateTime;
 
+    public long getPageIndex() {
+        return super.getCurrent();
+    }
+
+    public long getPageSize() {
+        return super.getSize();
+    }
+
+    public void setPageIndex(long pageIndex) {
+        super.setCurrent(pageIndex);
+    }
+
+    public void setPageSize(long pageSize) {
+        super.setSize(pageSize);
+    }
 
     public static final String ID = "id";
 
