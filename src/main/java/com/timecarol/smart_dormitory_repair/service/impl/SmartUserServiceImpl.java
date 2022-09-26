@@ -2,6 +2,7 @@ package com.timecarol.smart_dormitory_repair.service.impl;
 
 import cn.hutool.core.collection.CollectionUtil;
 import cn.hutool.core.date.DateUtil;
+import cn.hutool.core.lang.Validator;
 import cn.hutool.core.util.StrUtil;
 import com.alibaba.fastjson.JSON;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
@@ -19,9 +20,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import java.util.Date;
+import java.util.Objects;
 
 /**
  * 服务实现类
@@ -31,10 +33,11 @@ import java.util.regex.Pattern;
  */
 @Slf4j
 @Service
+@Transactional
 public class SmartUserServiceImpl extends ServiceImpl<SmartUserMapper, SmartUser> implements ISmartUserService {
 
     @Autowired
-    BCryptPasswordEncoder passwordEncoder;
+    BCryptPasswordEncoder passwordEncoder; //密码加密
 
     @Override
     public SmartUserDto query(SmartUserVo vo) {
@@ -59,6 +62,8 @@ public class SmartUserServiceImpl extends ServiceImpl<SmartUserMapper, SmartUser
         SmartUser entity = SmartUser.toEntity(vo);
         //密码加密
         entity.setPassword(passwordEncoder.encode(vo.getPassword()));
+        entity.setUpdateTime(null);
+        entity.setCreateTime(null);
         int effectRows = baseMapper.insert(entity);
         log.info("添加用户完成, 影响行数: {}, id: {}, localTime: {}, time: {}", effectRows, entity.getId(), DateUtil.now(), DateUtil.current());
         //去掉密码
@@ -73,6 +78,8 @@ public class SmartUserServiceImpl extends ServiceImpl<SmartUserMapper, SmartUser
         //校验通过, 进行修改
         SmartUser entity = SmartUser.toEntity(vo);
         entity.setPassword(null);
+        entity.setUpdateTime(new Date());
+        entity.setCreateTime(null);
         int effectRows = baseMapper.updateById(entity);
         log.info("修改用户完成, 影响行数: {}, id: {}, localTime: {}, time: {}", effectRows, entity.getId(), DateUtil.now(), DateUtil.current());
         //去掉密码
@@ -87,6 +94,9 @@ public class SmartUserServiceImpl extends ServiceImpl<SmartUserMapper, SmartUser
         updateWrapper.eq(SmartUser.ID, id);
         SmartUser entity = new SmartUser();
         entity.setId(id);
+        entity.setDeleted(1);
+        entity.setUpdateTime(new Date());
+        entity.setCreateTime(null);
         int effectRows = baseMapper.update(entity, updateWrapper);
         log.info("删除用户完成, 影响行数: {}, id: {}, localTime: {}, time: {}", effectRows, entity.getId(), DateUtil.now(), DateUtil.current());
         //去掉密码
@@ -96,7 +106,18 @@ public class SmartUserServiceImpl extends ServiceImpl<SmartUserMapper, SmartUser
 
     @Override
     public SmartUserDto resetPassword(SmartUserVo vo) {
-        return null;
+        log.info("修改密码, userVo: {}, localTime: {}, time: {}", JSON.toJSONString(vo), DateUtil.now(), DateUtil.current());
+        SmartUserDto query = query(vo);
+        if (Objects.isNull(query)) { //如果没有查询到用户信息
+            throw new BusinessException(HttpStatus.EXPECTATION_FAILED, "未找到用户信息");
+        }
+        query.setPassword(passwordEncoder.encode(vo.getPassword()));
+        SmartUser entity = SmartUser.toEntity(query);
+        entity.setUpdateTime(new Date());
+        entity.setCreateTime(null);
+        boolean isSuccess = updateById(entity);
+        log.info("修改密码完成, query: {}, res: {}, localTime: {}, time: {}", JSON.toJSONString(query), isSuccess, DateUtil.now(), DateUtil.current());
+        return query;
     }
 
 
@@ -110,11 +131,7 @@ public class SmartUserServiceImpl extends ServiceImpl<SmartUserMapper, SmartUser
             throw new BusinessException(HttpStatus.PAYMENT_REQUIRED, "手机号不允许为空");
         }
         //校验手机格式
-        String regPattern = "^((13[0-9])|(14[5,7,9])|(15([0-3]|[5-9]))|(166)|(17[0,1,3,5,6,7,8])|(18[0-9])|(19[8|9]))\\d{8}$";
-        Pattern pattern = Pattern.compile(regPattern);
-        Matcher matcher = pattern.matcher(vo.getPhone());
-        boolean isMatch = matcher.matches();
-        if (!isMatch) {
+        if (!Validator.isMobile(vo.getPhone())) {
             throw new BusinessException(HttpStatus.PAYMENT_REQUIRED, "请填入正确的手机号 ");
         }
         //检查用户名和手机号是否被占用

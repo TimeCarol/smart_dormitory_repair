@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.timecarol.smart_dormitory_repair.mapper.SmartRoleMapper">
+
+    <select id="query" resultType="com.timecarol.smart_dormitory_repair.dto.response.SmartRoleDto">
+        SELECT *
+        FROM smart_role
+        WHERE deleted = 0
+        <if test="id != null">
+            and id = #{id}
+        </if>
+    </select>
+    <select id="pageList" resultType="com.timecarol.smart_dormitory_repair.dto.response.SmartRoleDto">
+        SELECT *
+        FROM smart_role
+        WHERE deleted = 0
+        <if test="id != null">
+            and id = #{id}
+        </if>
+        <if test="roleName != null and roleName != ''">
+            and role_name like concat('%', #{roleName}, '%')
+        </if>
+    </select>
+</mapper>

@@ -5,6 +5,7 @@ import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.timecarol.smart_dormitory_repair.dto.response.SmartUserDto;
 import com.timecarol.smart_dormitory_repair.vo.SmartUserVo;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -87,6 +88,15 @@ public class SmartUser implements Serializable {
         }
         SmartUser smartUser = new SmartUser();
         BeanUtils.copyProperties(vo, smartUser);
+        return smartUser;
+    }
+
+    public static SmartUser toEntity(SmartUserDto dto) {
+        if (Objects.isNull(dto)) {
+            return null;
+        }
+        SmartUser smartUser = new SmartUser();
+        BeanUtils.copyProperties(dto, smartUser);
         return smartUser;
     }
 }

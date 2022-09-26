@@ -125,7 +125,7 @@ public class CodeGenerator {
         strategy.setSuperControllerClass(BaseController.class);
         // 写于父类中的公共字段
 //        strategy.setSuperEntityColumns("id");
-        strategy.setInclude("smart_user,smart_role"); //表名, 多个表用英文逗号分割
+        strategy.setInclude("smart_user", "smart_role"); //表名
         strategy.setControllerMappingHyphenStyle(true);
         strategy.setEntityColumnConstant(true);
 //        strategy.setTablePrefix(pc.getModuleName() + "_"); //去掉表前缀
