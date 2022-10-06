@@ -10,6 +10,7 @@ import com.timecarol.smart_dormitory_repair.service.ISmartUserService;
 import com.timecarol.smart_dormitory_repair.util.SimpleResponse;
 import com.timecarol.smart_dormitory_repair.vo.SmartUserVo;
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -21,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 @Api(description = "登录控制器")
 @RestController
-public class SmartLoginController {
+public class SmartLoginController extends BaseController {
 
     @Autowired
     private ISmartUserService smartUserService;
@@ -29,6 +30,7 @@ public class SmartLoginController {
     @Autowired
     private BCryptPasswordEncoder passwordEncoder;
 
+    @ApiOperation("登录")
     @PostMapping("/login")
     public SimpleResponse<SaTokenInfo> login(@RequestBody SmartUserVo vo) {
         //检查是否登录

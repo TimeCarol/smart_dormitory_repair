@@ -9,6 +9,9 @@
         <if test="id != null">
             and id = #{id}
         </if>
+        <if test="roleName != null and roleName != ''">
+            and role_name = #{roleName}
+        </if>
     </select>
     <select id="pageList" resultType="com.timecarol.smart_dormitory_repair.dto.response.SmartRoleDto">
         SELECT *

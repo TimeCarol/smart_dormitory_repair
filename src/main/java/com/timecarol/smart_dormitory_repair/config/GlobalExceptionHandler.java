@@ -35,90 +35,105 @@ public class GlobalExceptionHandler {
     }
 
     @ExceptionHandler(SaTokenException.class)
+    @ResponseStatus(code = HttpStatus.OK)
     public SimpleResponse<Object> handleSaTokenException(SaTokenException e) {
         log.info("发生异常, localTime: {}, time: {}, 异常信息: {}", DateUtil.now(), DateUtil.current(), e.toString());
         return SimpleResponse.error(e.getLocalizedMessage());
     }
 
     @ExceptionHandler(MissingServletRequestParameterException.class)
+    @ResponseStatus(code = HttpStatus.OK)
     public SimpleResponse<Object> handleHttpMessageNotReadableException(MissingServletRequestParameterException e) {
         log.info("发生异常, localTime: {}, time: {}, 异常信息: {}", DateUtil.now(), DateUtil.current(), e.toString());
         return SimpleResponse.error(e.getLocalizedMessage());
     }
 
     @ExceptionHandler(IllegalArgumentException.class)
+    @ResponseStatus(code = HttpStatus.OK)
     public SimpleResponse<Object> handlerIllegalArgumentException(IllegalArgumentException e) {
         log.info("发生异常, localTime: {}, time: {}, 异常信息: {}", DateUtil.now(), DateUtil.current(), e.toString());
         return SimpleResponse.error(e.getLocalizedMessage());
     }
 
     @ExceptionHandler(NullPointerException.class)
+    @ResponseStatus(code = HttpStatus.OK)
     public SimpleResponse<Object> handleNullPointerException(NullPointerException e) {
         log.info("发生异常, localTime: {}, time: {}, 异常信息: {}", DateUtil.now(), DateUtil.current(), e.toString());
         return SimpleResponse.error(e.getLocalizedMessage());
     }
 
     @ExceptionHandler(ClassCastException.class)
+    @ResponseStatus(code = HttpStatus.OK)
     public SimpleResponse<Object> handleClassCastException(ClassCastException e) {
         log.info("发生异常, localTime: {}, time: {}, 异常信息: {}", DateUtil.now(), DateUtil.current(), e.toString());
         return SimpleResponse.error(e.getLocalizedMessage());
     }
 
     @ExceptionHandler(IndexOutOfBoundsException.class)
+    @ResponseStatus(code = HttpStatus.OK)
     public SimpleResponse<Object> handleIndexOutOfBoundsException(IndexOutOfBoundsException e) {
         log.info("发生异常, localTime: {}, time: {}, 异常信息: {}", DateUtil.now(), DateUtil.current(), e.toString());
         return SimpleResponse.error(e.getLocalizedMessage());
     }
 
     @ExceptionHandler(SQLException.class)
+    @ResponseStatus(code = HttpStatus.OK)
     public SimpleResponse<Object> handleSQLException(SQLException e) {
         log.info("发生异常, localTime: {}, time: {}, 异常信息: {}", DateUtil.now(), DateUtil.current(), e.toString());
         return SimpleResponse.error(e.getLocalizedMessage());
     }
 
     @ExceptionHandler(IOException.class)
+    @ResponseStatus(code = HttpStatus.OK)
     public SimpleResponse<Object> handleIOException(IOException e) {
         log.info("发生异常, localTime: {}, time: {}, 异常信息: {}", DateUtil.now(), DateUtil.current(), e.toString());
         return SimpleResponse.error(e.getLocalizedMessage());
     }
 
     @ExceptionHandler(NoSuchMethodException.class)
+    @ResponseStatus(code = HttpStatus.OK)
     public SimpleResponse<Object> handleNoSuchMethodException(NoSuchMethodException e) {
         log.info("发生异常, localTime: {}, time: {}, 异常信息: {}", DateUtil.now(), DateUtil.current(), e.toString());
         return SimpleResponse.error(e.getLocalizedMessage());
     }
 
     @ExceptionHandler(ClassNotFoundException.class)
+    @ResponseStatus(code = HttpStatus.OK)
     public SimpleResponse<Object> handleClassNotFoundException(ClassNotFoundException e) {
         log.info("发生异常, localTime: {}, time: {}, 异常信息: {}", DateUtil.now(), DateUtil.current(), e.toString());
         return SimpleResponse.error(e.getLocalizedMessage());
     }
 
     @ExceptionHandler(BindException.class)
+    @ResponseStatus(code = HttpStatus.OK)
     public SimpleResponse<Object> handleBindException(BindException e) {
         log.info("发生异常, localTime: {}, time: {}, 异常信息: {}", DateUtil.now(), DateUtil.current(), e.toString());
         return SimpleResponse.error(e.getLocalizedMessage());
     }
 
     @ExceptionHandler(ValidateException.class)
+    @ResponseStatus(code = HttpStatus.OK)
     public SimpleResponse<Object> handleValidateException(ValidateException e) {
         log.info("发生异常, localTime: {}, time: {}, 异常信息: {}", DateUtil.now(), DateUtil.current(), e.toString());
         return SimpleResponse.error(e.getLocalizedMessage());
     }
 
     @ExceptionHandler(ValidationException.class)
+    @ResponseStatus(code = HttpStatus.OK)
     public SimpleResponse<Object> handleValidationException(ValidationException e) {
         log.info("发生异常, localTime: {}, time: {}, 异常信息: {}", DateUtil.now(), DateUtil.current(), e.toString());
         return SimpleResponse.error(e.getLocalizedMessage());
     }
 
     @ExceptionHandler(BusinessException.class)
+    @ResponseStatus(code = HttpStatus.OK)
     public SimpleResponse<Object> handleBusinessException(BusinessException e) {
         log.info("发生异常, localTime: {}, time: {}, 异常信息: {}", DateUtil.now(), DateUtil.current(), e.toString());
         return SimpleResponse.error(e);
     }
 
     @ExceptionHandler(Exception.class)
+    @ResponseStatus(code = HttpStatus.OK)
     public SimpleResponse<Object> handleException(Exception e) {
         log.info("发生异常, localTime: {}, time: {}, 异常信息: {}", DateUtil.now(), DateUtil.current(), e.toString());
         return SimpleResponse.error(e.getLocalizedMessage());

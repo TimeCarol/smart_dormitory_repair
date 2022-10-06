@@ -1,9 +1,11 @@
 package com.timecarol.smart_dormitory_repair.controller;
 
 import cn.dev33.satoken.annotation.SaCheckLogin;
+import cn.dev33.satoken.stp.StpUtil;
 import cn.hutool.core.util.StrUtil;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.google.common.base.Preconditions;
+import com.timecarol.smart_dormitory_repair.constant.Constant;
 import com.timecarol.smart_dormitory_repair.dto.response.SmartUserDto;
 import com.timecarol.smart_dormitory_repair.exception.BusinessException;
 import com.timecarol.smart_dormitory_repair.service.ISmartUserService;
@@ -19,7 +21,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.validation.Valid;
-import java.util.Objects;
+import java.util.*;
 
 /**
  * @author timecarol
@@ -73,7 +75,9 @@ public class SmartUserController extends BaseController {
     @ApiOperation("修改密码")
     public SimpleResponse<SmartUserDto> resetPassword(@Valid @RequestBody SmartUserVo vo) {
         SmartUserDto smartUser = getSmartUser();
-        if (!StrUtil.equals(vo.getUsername(), smartUser.getUsername())) {
+        Set<String> permissionSet = new HashSet<>(Optional.ofNullable(StpUtil.getPermissionList()).orElseGet(Collections::emptyList));
+        //如果不是本人且不是管理员则没有权限修改密码
+        if (!StrUtil.equals(vo.getUsername(), smartUser.getUsername()) && !permissionSet.contains(Constant.ADMIN_ROLE_NAME)) {
             throw new BusinessException(HttpStatus.NOT_ACCEPTABLE, "您没有权限修改密码");
         }
         return new SimpleResponse<>(smartUserService.resetPassword(vo));

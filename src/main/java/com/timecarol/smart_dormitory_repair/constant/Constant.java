@@ -7,6 +7,8 @@ public class Constant {
 
     public static final String SMART_USER = "SmartUser";
 
+    public static final String ADMIN_ROLE_NAME = "admin";
+
     public static final long ONE_SECOND = 1000L;
 
     public static final long ONE_MINUTE = 60000L;

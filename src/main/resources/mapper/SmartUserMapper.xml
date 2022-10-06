@@ -4,11 +4,14 @@
 
     <select id="pageList" resultType="com.timecarol.smart_dormitory_repair.dto.response.SmartUserDto">
         SELECT
-            *
+        *
         FROM
-            smart_user
+        smart_user
         WHERE
-            deleted = 0
+        deleted = 0
+        <if test="username != null and username != ''">
+            AND username LIKE CONCAT('%', #{username}, '%')
+        </if>
     </select>
     <select id="query" resultType="com.timecarol.smart_dormitory_repair.dto.response.SmartUserDto">
         SELECT

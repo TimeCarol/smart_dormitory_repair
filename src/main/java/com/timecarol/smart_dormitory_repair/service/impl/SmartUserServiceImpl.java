@@ -141,14 +141,14 @@ public class SmartUserServiceImpl extends ServiceImpl<SmartUserMapper, SmartUser
         userNameQuery.eq(SmartUser.DELETED, 0);
         userNameQuery.and(wrapper -> wrapper.eq(SmartUser.USERNAME, vo.getUsername()));
         SmartUser usernameUser = baseMapper.selectOne(userNameQuery);
-        if (usernameUser != null) {
+        if (Objects.nonNull(usernameUser)) {
             throw new BusinessException(HttpStatus.IM_USED, "该用户名已被占用, 请更换");
         }
         QueryWrapper<SmartUser> phoneQuery = new QueryWrapper<>();
         phoneQuery.eq(SmartUser.DELETED, 0);
         phoneQuery.and(wrapper -> wrapper.eq(SmartUser.PHONE, vo.getPhone()));
         SmartUser phoneUser = baseMapper.selectOne(phoneQuery);
-        if (phoneUser != null) {
+        if (Objects.nonNull(phoneUser)) {
             throw new BusinessException(HttpStatus.IM_USED, "该手机号已被注册");
         }
     }
