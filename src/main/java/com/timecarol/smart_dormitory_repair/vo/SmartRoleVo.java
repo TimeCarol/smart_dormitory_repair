@@ -3,13 +3,8 @@ package com.timecarol.smart_dormitory_repair.vo;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.timecarol.smart_dormitory_repair.dto.response.SmartRoleDto;
-import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
-import lombok.experimental.Accessors;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -19,11 +14,6 @@ import java.util.Date;
  * @since 2022-09-26
  */
 @Data
-@EqualsAndHashCode
-@AllArgsConstructor
-@NoArgsConstructor
-@Accessors(chain = true)
-@ApiModel(value = "SmartRole对象", description = "")
 public class SmartRoleVo extends Page<SmartRoleDto> implements Serializable {
 
     private static final long serialVersionUID = 1L;

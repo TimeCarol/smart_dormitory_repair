@@ -3,6 +3,8 @@ package ${package.Controller};
 import ${package.Entity}.${entity};
 import ${package.Service}.${table.serviceName};
 import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.Api;
+import lombok.extern.slf4j.Slf4j;
 <#--import org.apache.shiro.authz.annotation.Logical;-->
 <#--import org.apache.shiro.authz.annotation.RequiresPermissions;-->
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.Valid;
 import com.timecarol.smart_dormitory_repair.util.SimpleResponse;
+import com.baomidou.mybatisplus.core.metadata.IPage;
 <#--import com.common.res.DataResult;-->
 <#if restControllerStyle>
 <#else>
@@ -27,18 +30,20 @@ import com.timecarol.smart_dormitory_repair.util.SimpleResponse;
 <#else>
     @Controller
 </#if>
-@RequestMapping("api")
+@Slf4j
+@RequestMapping("/${table.entityName}")
+@Api(description = "${table.comment}")
 <#if kotlin>
-    class ${table.controllerName}<#if superControllerClass??> : ${superControllerClass}()</#if>
+class ${table.controllerName}<#if superControllerClass??> : ${superControllerClass}()</#if>
 <#else>
-    <#if superControllerClass??>
-        public class ${table.controllerName} extends ${superControllerClass} {
-    <#else>
-        public class ${table.controllerName} {
-    </#if>
+<#if superControllerClass??>
+    public class ${table.controllerName} extends ${superControllerClass} {
+<#else>
+    public class ${table.controllerName} {
+</#if>
 
-    @Autowired
-    private ${table.serviceName} ${table.serviceName?uncap_first};
+@Autowired
+${table.serviceName} ${table.serviceName?substring(1)?uncap_first};
 
 <#--    @ApiOperation(value = "${table.comment}分页列表", response = ${entity}.class)-->
 <#--    @ApiImplicitParams({-->
@@ -52,40 +57,46 @@ import com.timecarol.smart_dormitory_repair.util.SimpleResponse;
 <#--    Object data = ${table.serviceName?uncap_first}.page(param);-->
 <#--    return RetJson.ok(data);-->
 <#--    }-->
-    @GetMapping("/<#if controllerMappingHyphenStyle??>${controllerMappingHyphen}<#else>${table.entityPath}</#if>")
+@PostMapping("/query")
 <#--    @RequiresPermissions("sys:${table.entityName?uncap_first}:list")-->
-    @ApiOperation("${table.entityName}查询单个")
-    public SimpleResponse&lt;${table.entityName?uncap_first}Dto&gt; get${table.entityName}(@RequestBody ${table.entityName} ${table.entityName?uncap_first}){
-    return new SimpleResponse<>(${table.entityName?uncap_first}Service.get${table.entityName}(${table.entityName?uncap_first}));
+@ApiOperation("${table.comment}查询单个")
+public SimpleResponse
+<${table.entityName}Dto> query(@Valid @RequestBody ${table.entityName}Vo vo){
+    return new SimpleResponse<>(${table.entityName?uncap_first}Service.query(vo));
     }
 
-    @GetMapping("/<#if controllerMappingHyphenStyle??>${controllerMappingHyphen}<#else>${table.entityPath}</#if>")
-<#--    @RequiresPermissions("sys:${table.entityName?uncap_first}:list")-->
-    @ApiOperation("${table.entityName}查询全部")
-    public SimpleResponse&lt;${table.entityName?uncap_first}Dto&gt; getAll${table.entityName}(){
-    return new SimpleResponse<>(${table.entityName?uncap_first}Service.getAll${table.entityName}());
-    }
+    @PostMapping("/pageList")
+    <#--    @RequiresPermissions("sys:${table.entityName?uncap_first}:list")-->
+    @ApiOperation("${table.comment}分页查询")
+    public SimpleResponse
+    <IPage
+    <${table.entityName}Dto>> pageList(@Valid @RequestBody ${table.entityName}Vo vo){
+        return new SimpleResponse<>(${table.entityName?uncap_first}Service.pageList(vo));
+        }
 
-    @PostMapping("/<#if controllerMappingHyphenStyle??>${controllerMappingHyphen}<#else>${table.entityPath}</#if>")
-<#--    @RequiresPermissions("sys:${table.entityName?uncap_first}:add")-->
-    @ApiOperation("${table.entityName}新增")
-    public SimpleResponse&lt;${table.entityName?uncap_first}Dto&gt; add(@Valid @RequestBody ${table.entityName} ${table.entityName?uncap_first}) {
-    return new SimpleResponse<>(${table.entityName?uncap_first}Service.add(${table.entityName?uncap_first}));
-    }
+        @PostMapping("/add")
+        <#--    @RequiresPermissions("sys:${table.entityName?uncap_first}:add")-->
+        @ApiOperation("${table.comment}新增")
+        public SimpleResponse
+        <${table.entityName}Dto> add(@Valid @RequestBody ${table.entityName}Vo vo) {
+            return new SimpleResponse<>(${table.entityName?uncap_first}Service.add(vo));
+            }
 
-    @PutMapping("/<#if controllerMappingHyphenStyle??>${controllerMappingHyphen}<#else>${table.entityPath}</#if>")
-<#--    @RequiresPermissions("sys:${table.entityName?uncap_first}:update")-->
-    @ApiOperation("${table.entityName}修改")
-    public SimpleResponse&lt;${table.entityName?uncap_first}Dto&gt; update(@Valid @RequestBody ${table.entityName} ${table.entityName?uncap_first}) {
-    return new SimpleResponse<>(${table.entityName?uncap_first}Service.update(${table.entityName?uncap_first}));
-    }
+            @PostMapping("/edit")
+            <#--    @RequiresPermissions("sys:${table.entityName?uncap_first}:update")-->
+            @ApiOperation("${table.comment}修改")
+            public SimpleResponse
+            <${table.entityName}Dto> edit(@Valid @RequestBody ${table.entityName}Vo vo) {
+                return new SimpleResponse<>(${table.entityName?uncap_first}Service.edit(vo));
+                }
 
 
-    @DeleteMapping(value = "/<#if controllerMappingHyphenStyle??>${controllerMappingHyphen}<#else>${table.entityPath}</#if>/{ids}")
-<#--    @RequiresPermissions("sys:${table.entityName?uncap_first}:delete")-->
-    @ApiOperation("${table.entityName}删除(单个条目)")
-    public SimpleResponse&lt;${table.entityName?uncap_first}Dto&gt; del(@NotBlank(message = "{required}") @PathVariable String ids) {
-    return new SimpleResponse<>(${table.entityName?uncap_first}Service.del(ids));
-    }
-    }
+                @PostMapping(value = "/del")
+                <#--    @RequiresPermissions("sys:${table.entityName?uncap_first}:delete")-->
+                @ApiOperation("${table.comment}删除(单个条目)")
+                public SimpleResponse
+                <${table.entityName}Dto> del(@Valid @RequestBody ${table.entityName}Vo vo) {
+                    return new SimpleResponse<>(${table.entityName?uncap_first}Service.del(vo));
+                    }
+                    }
 </#if>

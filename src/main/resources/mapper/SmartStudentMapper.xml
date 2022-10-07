@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.timecarol.smart_dormitory_repair.mapper.SmartStudentMapper">
+
+    <select id="query" resultType="com.timecarol.smart_dormitory_repair.dto.response.SmartStudentDto">
+        SELECT *
+        FROM smart_student
+        <where>
+            AND deleted = 0
+            <if test="id != null">
+                AND id = #{id}
+            </if>
+            <if test="username != null and username != ''">
+                AND username = #{username}
+            </if>
+            <if test="phone != null and phone != ''">
+                AND phone = #{phone}
+            </if>
+            <if test="idCard != null and idCard != ''">
+                AND id_card = #{idCard}
+            </if>
+        </where>
+    </select>
+</mapper>

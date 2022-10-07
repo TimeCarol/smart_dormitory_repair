@@ -24,7 +24,7 @@ public class CodeGenerator {
         // 全局配置
         GlobalConfig gc = new GlobalConfig();
         String projectPath = System.getProperty("user.dir");
-        gc.setFileOverride(false);
+        gc.setFileOverride(true);
         gc.setEnableCache(false); //XML二级缓存
         gc.setOutputDir(projectPath + "/src/main/java");
         gc.setAuthor("timecarol");
@@ -125,7 +125,7 @@ public class CodeGenerator {
         strategy.setSuperControllerClass(BaseController.class);
         // 写于父类中的公共字段
 //        strategy.setSuperEntityColumns("id");
-        strategy.setInclude("smart_user", "smart_role", "smart_maintainer"); //表名
+        strategy.setInclude("smart_student"); //表名
         strategy.setControllerMappingHyphenStyle(true);
         strategy.setEntityColumnConstant(true);
 //        strategy.setTablePrefix(pc.getModuleName() + "_"); //去掉表前缀
