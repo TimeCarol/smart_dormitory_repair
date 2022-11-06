@@ -4,15 +4,19 @@ import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.timecarol.smart_dormitory_repair.dto.response.SmartStudentDto;
+import com.timecarol.smart_dormitory_repair.vo.SmartStudentVo;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
+import org.springframework.beans.BeanUtils;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.Objects;
 
 /**
  * @author timecarol
@@ -108,5 +112,22 @@ public class SmartStudent implements Serializable {
 
     public static final String UPDATE_TIME = "update_time";
 
+    public static SmartStudent toEntity(SmartStudentDto dto) {
+        if (Objects.nonNull(dto)) {
+            SmartStudent smartStudent = new SmartStudent();
+            BeanUtils.copyProperties(dto, smartStudent);
+            return smartStudent;
+        }
+        return null;
+    }
+
+    public static SmartStudent toEntity(SmartStudentVo vo) {
+        if (Objects.nonNull(vo)) {
+            SmartStudent smartStudent = new SmartStudent();
+            BeanUtils.copyProperties(vo, smartStudent);
+            return smartStudent;
+        }
+        return null;
+    }
 }
 

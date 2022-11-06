@@ -1,13 +1,16 @@
 package com.timecarol.smart_dormitory_repair.dto.response;
 
+import com.timecarol.smart_dormitory_repair.entity.SmartStudent;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
+import org.springframework.beans.BeanUtils;
 
 import java.util.Date;
+import java.util.Objects;
 
 /**
  * @author timecarol
@@ -59,5 +62,13 @@ public class SmartStudentDto {
     @ApiModelProperty(value = "更新时间")
     private Date updateTime;
 
+    public static SmartStudentDto toDto(SmartStudent entity) {
+        if (Objects.isNull(entity)) {
+            return null;
+        }
+        SmartStudentDto dto = new SmartStudentDto();
+        BeanUtils.copyProperties(entity, dto);
+        return dto;
+    }
 }
 

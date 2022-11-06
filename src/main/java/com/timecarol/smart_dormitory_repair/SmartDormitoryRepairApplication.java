@@ -1,10 +1,12 @@
 package com.timecarol.smart_dormitory_repair;
 
+import cn.hutool.extra.spring.SpringUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
+import org.springframework.core.env.Environment;
 
 import java.time.Duration;
 import java.time.Instant;
@@ -20,7 +22,9 @@ public class SmartDormitoryRepairApplication {
         SpringApplication.run(SmartDormitoryRepairApplication.class, args);
         Instant end = Instant.now();
         Duration between = Duration.between(start, end);
-        log.info("smart-dormitory启动完成, 耗时: {}毫秒, swagger地址: http://localhost:8086/swagger-ui.html, API文档地址: http://localhost:8086/doc.html", between.toMillis());
+        Environment environment = SpringUtil.getBean(Environment.class);
+        String port = environment.getProperty("local.server.port");
+        log.info("smart-dormitory启动完成, 耗时: {}毫秒, swagger地址: http://localhost:{}/swagger-ui.html, API文档地址: http://localhost:{}/doc.html", between.toMillis(), port, port);
     }
 
 }

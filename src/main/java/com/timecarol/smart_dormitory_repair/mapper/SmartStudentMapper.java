@@ -1,6 +1,7 @@
 package com.timecarol.smart_dormitory_repair.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.timecarol.smart_dormitory_repair.dto.response.SmartStudentDto;
 import com.timecarol.smart_dormitory_repair.entity.SmartStudent;
 import com.timecarol.smart_dormitory_repair.vo.SmartStudentVo;
@@ -14,4 +15,6 @@ import com.timecarol.smart_dormitory_repair.vo.SmartStudentVo;
 public interface SmartStudentMapper extends BaseMapper<SmartStudent> {
 
     SmartStudentDto query(SmartStudentVo vo);
+
+    IPage<SmartStudentDto> pageList(SmartStudentVo vo);
 }

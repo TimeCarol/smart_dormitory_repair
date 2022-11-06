@@ -65,10 +65,26 @@ public class BaseController {
 
 //    @ApiOperation("生成PDF")
 //    @GetMapping("/pdf")
-//    public void generatePDF(HttpServletResponse res) throws IOException {
+//    public void pdf(HttpServletResponse res) throws IOException {
 //        PdfUtil.PdfDynamicParam pdfParam = new PdfUtil.PdfDynamicParam();
-//        pdfParam.setTemplatePath("templates/pdf/送货单.ftl");
-//        pdfParam.setPdfPath(DateUtil.format(new Date(), "yyyy-MM-dd_HH-mm-ss") + "_送货单.pdf");
+//        pdfParam.setTemplatePath("templates/pdf/物流退还单.ftl");
+//        pdfParam.setPdfPath(DateUtil.format(new Date(), "yyyy-MM-dd_HH-mm-ss") + "_物流退换单.pdf");
+//        Map<String, Object> param = Maps.newHashMapWithExpectedSize(20);
+//        param.put("printNo", "SHsunying000009");
+//        param.put("piece", "第一联（共四联）");
+//        param.put("dispatchNo", "ZY202210240127");
+//        param.put("printDate", new Date());
+//        param.put("projectName", "颀中先进封装测试生产基地项目");
+//        param.put("projectAddress", "安徽省合肥市瑶海区合肥综合保税区");
+//        param.put("authName", "苏州鹏润脚手架工程有限公司");
+//        param.put("mobiles", "13456743563");
+//        param.put("projectArea", "东北一区");
+//        param.put("driver", "张三");
+//        param.put("carNumber", "赣B23456");
+//        param.put("detailList", Collections.emptyList());
+//        param.put("remarks", "备注");
+//        param.put("receiveDate", "2022-11-03");
+//        param.put("nickName", "张三");
 //        boolean result = PdfUtil.generatePdf(pdfParam);
 //        log.info("pdf生成结果: " + result);
 //

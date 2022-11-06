@@ -1,5 +1,6 @@
 package com.timecarol.smart_dormitory_repair.util;
 
+import cn.hutool.core.util.StrUtil;
 import com.itextpdf.text.pdf.BaseFont;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
@@ -59,11 +60,12 @@ public class PdfUtil {
             generateHTML(param.getTemplatePath(), temporaryPdfHtml, param.getPdfParam());
             // 根据html合同生成pdf合同
             generatePDF(param.getPdfPath(), temporaryPdfHtml);
-            // 删除临时html格式合同
-            removeFile(temporaryPdfHtml);
             return true;
         } catch (Exception e) {
             log.error("生成pdf失败: " + e);
+        } finally {
+            // 删除临时html格式合同
+            removeFile(temporaryPdfHtml);
         }
         return false;
     }
@@ -124,7 +126,9 @@ public class PdfUtil {
      * @Description 移除文件
      */
     private static boolean removeFile(String fileUrl) {
+        if (StrUtil.isBlankIfStr(fileUrl)) return true;
         File file = new File(fileUrl);
+        if (!file.exists()) return true;
         return file.delete();
     }
 
