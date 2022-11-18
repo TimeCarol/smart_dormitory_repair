@@ -24,7 +24,8 @@ public class SmartDormitoryRepairApplication {
         Duration between = Duration.between(start, end);
         Environment environment = SpringUtil.getBean(Environment.class);
         String port = environment.getProperty("local.server.port");
-        log.info("smart-dormitory启动完成, 耗时: {}毫秒, swagger地址: http://localhost:{}/swagger-ui.html, API文档地址: http://localhost:{}/doc.html", between.toMillis(), port, port);
+        String appName = environment.getProperty("spring.application.name");
+        log.info("{}启动完成, 耗时: {}毫秒, swagger地址: http://localhost:{}/swagger-ui.html, API文档地址: http://localhost:{}/doc.html", appName, between.toMillis(), port, port);
     }
 
 }

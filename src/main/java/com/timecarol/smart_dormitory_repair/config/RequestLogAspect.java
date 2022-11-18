@@ -7,6 +7,8 @@ import cn.hutool.core.util.StrUtil;
 import cn.hutool.http.useragent.UserAgent;
 import cn.hutool.http.useragent.UserAgentUtil;
 import com.alibaba.fastjson.JSON;
+import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.AfterReturning;
@@ -17,16 +19,15 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
+import org.springframework.web.multipart.MultipartFile;
 
+import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.time.Duration;
 import java.time.Instant;
-import java.util.Collections;
-import java.util.List;
-import java.util.Objects;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
+import java.util.*;
 
 @Aspect
 @Component
@@ -44,14 +45,40 @@ public class RequestLogAspect {
         Instant start = Instant.now();
         req.setAttribute("requestStartTime", start);
         StringBuilder logInfo = new StringBuilder();
-        logInfo.append(StrUtil.format("********request start, url = {},", req.getRequestURL().toString()));
+        logInfo.append(StrUtil.format("********request start, url = {}, ", req.getRequestURL().toString()));
         logInfo.append(StrUtil.format("Method = {},", req.getMethod()));
         logInfo.append(StrUtil.format("remoteIp = {}, localIp = {},", req.getRemoteAddr(), req.getLocalAddr() + ":" + req.getLocalPort()));
         logInfo.append(StrUtil.format("class_method = {},", joinPoint.getSignature().getDeclaringTypeName() + "." + joinPoint.getSignature().getName()));
         Object[] args = joinPoint.getArgs();
         List<Object> argList = Collections.emptyList();
         if (Objects.nonNull(args) && args.length > 0) {
-            argList = Stream.of(args).filter(o -> !(o instanceof ServletResponse)).collect(Collectors.toList());
+            argList = Lists.newLinkedList();
+            for (Object o : args) {
+                if (o instanceof ServletRequest) {
+                    ServletRequest request = (ServletRequest) o;
+                    argList.add(request.getParameterMap());
+                } else if (o instanceof MultipartFile) {
+                    MultipartFile file = (MultipartFile) o;
+                    Map<String, Object> fileParam = Maps.newLinkedHashMap();
+                    fileParam.put("name", file.getName());
+                    fileParam.put("originalFileName", file.getOriginalFilename());
+                    fileParam.put("fileSize", file.getSize() + " bytes");
+                    fileParam.put("Content-Type", file.getContentType());
+                    argList.add(fileParam);
+                } else if (o instanceof HttpSession) {
+                    HttpSession session = (HttpSession) o;
+                    Enumeration<String> attributeNames = session.getAttributeNames();
+                    Map<String, Object> sessionParam = Maps.newLinkedHashMap();
+                    while (attributeNames.hasMoreElements()) {
+                        String name = attributeNames.nextElement();
+                        Object attribute = session.getAttribute(name);
+                        sessionParam.put(name, attribute);
+                    }
+                    argList.add(sessionParam);
+                } else if (!(o instanceof ServletResponse)) {
+                    argList.add(o);
+                }
+            }
         }
         logInfo.append(StrUtil.format("args = {},", JSON.toJSONString(argList)));
         String userAgent = req.getHeader(HttpHeaders.USER_AGENT);
@@ -64,7 +91,7 @@ public class RequestLogAspect {
             String engineVersion = ua.getEngineVersion();
             String os = ua.getOs().toString();
             String platform = ua.getPlatform().toString();
-            logInfo.append(StrUtil.format("{} info, browser:{}, version:{}, engine:{}, engineVersion:{}, os:{}, platform:{}", HttpHeaders.USER_AGENT, browser, version, engine, engineVersion, os, platform));
+            logInfo.append(StrUtil.format("{} info{browser:{}, version:{}, engine:{}, engineVersion:{}, os:{}, platform:{}}", HttpHeaders.USER_AGENT, browser, version, engine, engineVersion, os, platform));
         }
         log.info(logInfo.toString());
     }

@@ -37,6 +37,12 @@ public class SmartUserDto implements Serializable {
     @ApiModelProperty(value = "角色id")
     private Long roleId;
 
+    @ApiModelProperty(value = "角色名称")
+    private String roleName;
+
+    @ApiModelProperty(value = "角色描述")
+    private String roleDescription;
+
     @ApiModelProperty(value = "是否删除 0-未删除;1-已删除")
     @TableField("deleted")
     private Integer deleted;

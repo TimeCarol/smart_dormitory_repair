@@ -3,16 +3,20 @@ package com.timecarol.smart_dormitory_repair.service.impl;
 import cn.hutool.core.collection.CollectionUtil;
 import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.lang.Validator;
+import cn.hutool.core.util.BooleanUtil;
 import cn.hutool.core.util.StrUtil;
 import com.alibaba.fastjson.JSON;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.google.common.collect.Maps;
 import com.timecarol.smart_dormitory_repair.dto.response.SmartUserDto;
+import com.timecarol.smart_dormitory_repair.entity.SmartRole;
 import com.timecarol.smart_dormitory_repair.entity.SmartUser;
 import com.timecarol.smart_dormitory_repair.exception.BusinessException;
 import com.timecarol.smart_dormitory_repair.mapper.SmartUserMapper;
+import com.timecarol.smart_dormitory_repair.service.ISmartRoleService;
 import com.timecarol.smart_dormitory_repair.service.ISmartUserService;
 import com.timecarol.smart_dormitory_repair.vo.SmartUserVo;
 import lombok.extern.slf4j.Slf4j;
@@ -23,7 +27,10 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Date;
+import java.util.List;
+import java.util.Map;
 import java.util.Objects;
+import java.util.stream.Collectors;
 
 /**
  * 服务实现类
@@ -39,9 +46,20 @@ public class SmartUserServiceImpl extends ServiceImpl<SmartUserMapper, SmartUser
     @Autowired
     BCryptPasswordEncoder passwordEncoder; //密码加密
 
+    @Autowired
+    ISmartRoleService roleService;
+
     @Override
     public SmartUserDto query(SmartUserVo vo) {
-        return baseMapper.query(vo);
+        SmartUserDto query = baseMapper.query(vo);
+        if (Objects.nonNull(query) && Objects.nonNull(query.getRoleId())) {
+            SmartRole role = roleService.getById(query.getRoleId());
+            if (Objects.nonNull(role) && Integer.valueOf(0).equals(role.getDeleted())) {
+                query.setRoleName(role.getRoleName());
+                query.setRoleDescription(role.getDescription());
+            }
+        }
+        return query;
     }
 
     @Override
@@ -50,6 +68,23 @@ public class SmartUserServiceImpl extends ServiceImpl<SmartUserMapper, SmartUser
         if (CollectionUtil.isNotEmpty(list.getRecords())) {
             //去掉密码
             list.getRecords().forEach(item -> item.setPassword(""));
+            //收集角色id列表
+            List<Long> roleIds = list.getRecords().stream().map(SmartUserDto::getRoleId).filter(Objects::nonNull).distinct().collect(Collectors.toList());
+            //根据id查询角色信息
+            QueryWrapper<SmartRole> roleWrapper = new QueryWrapper<>();
+            roleWrapper.eq(SmartRole.DELETED, 0);
+            roleWrapper.and(wrapper -> wrapper.in(SmartRole.ID, roleIds));
+            List<SmartRole> roleList = roleService.list(roleWrapper);
+            //将角色信息列表转为map, key为id
+            Map<Long, SmartRole> roleMap = Maps.newHashMapWithExpectedSize(roleList.size());
+            roleList.forEach(item -> roleMap.put(item.getId(), item));
+            //设置角色名
+            list.getRecords().forEach(item -> {
+                if (Objects.nonNull(item.getRoleId()) && Objects.nonNull(roleMap.get(item.getRoleId()))) {
+                    item.setRoleName(roleMap.get(item.getRoleId()).getRoleName());
+                    item.setRoleDescription(roleMap.get(item.getRoleId()).getDescription());
+                }
+            });
         }
         return list;
     }
@@ -57,7 +92,7 @@ public class SmartUserServiceImpl extends ServiceImpl<SmartUserMapper, SmartUser
     @Override
     public SmartUserDto add(SmartUserVo vo) {
         log.info("添加用户, 入参: {}, localTime: {}, time: {}", JSON.toJSONString(vo), DateUtil.now(), DateUtil.current());
-        validateUser(vo);
+        validateUser(vo, Boolean.FALSE);
         //校验通过, 进行添加
         SmartUser entity = SmartUser.toEntity(vo);
         //密码加密
@@ -74,7 +109,7 @@ public class SmartUserServiceImpl extends ServiceImpl<SmartUserMapper, SmartUser
     @Override
     public SmartUserDto edit(SmartUserVo vo) {
         log.info("修改用户, 入参: {}, localTime: {}, time: {}", JSON.toJSONString(vo), DateUtil.now(), DateUtil.current());
-        validateUser(vo);
+        validateUser(vo, Boolean.TRUE);
         //校验通过, 进行修改
         SmartUser entity = SmartUser.toEntity(vo);
         entity.setPassword(null);
@@ -123,7 +158,7 @@ public class SmartUserServiceImpl extends ServiceImpl<SmartUserMapper, SmartUser
     }
 
 
-    public void validateUser(SmartUserVo vo) {
+    public void validateUser(SmartUserVo vo, Boolean isEdit) {
         //校验用户名
         if (StrUtil.isBlankIfStr(vo.getUsername())) {
             throw new BusinessException(HttpStatus.PAYMENT_REQUIRED, "用户名不允许为空");
@@ -141,14 +176,18 @@ public class SmartUserServiceImpl extends ServiceImpl<SmartUserMapper, SmartUser
         userNameQuery.eq(SmartUser.DELETED, 0);
         userNameQuery.and(wrapper -> wrapper.eq(SmartUser.USERNAME, vo.getUsername()));
         SmartUser usernameUser = baseMapper.selectOne(userNameQuery);
-        if (Objects.nonNull(usernameUser)) {
+        if (Objects.nonNull(usernameUser) && BooleanUtil.isFalse(isEdit)) {
+            throw new BusinessException(HttpStatus.IM_USED, "该用户名已被占用, 请更换");
+        } else if (Objects.nonNull(usernameUser) && BooleanUtil.isTrue(isEdit) && BooleanUtil.isFalse(StrUtil.equals(usernameUser.getUsername(), vo.getUsername()))) {
             throw new BusinessException(HttpStatus.IM_USED, "该用户名已被占用, 请更换");
         }
         QueryWrapper<SmartUser> phoneQuery = new QueryWrapper<>();
         phoneQuery.eq(SmartUser.DELETED, 0);
         phoneQuery.and(wrapper -> wrapper.eq(SmartUser.PHONE, vo.getPhone()));
         SmartUser phoneUser = baseMapper.selectOne(phoneQuery);
-        if (Objects.nonNull(phoneUser)) {
+        if (Objects.nonNull(phoneUser) && BooleanUtil.isFalse(isEdit)) {
+            throw new BusinessException(HttpStatus.IM_USED, "该手机号已被注册");
+        } else if (Objects.nonNull(phoneUser) && BooleanUtil.isTrue(isEdit) && BooleanUtil.isFalse(StrUtil.equals(phoneUser.getPhone(), vo.getPhone()))) {
             throw new BusinessException(HttpStatus.IM_USED, "该手机号已被注册");
         }
     }

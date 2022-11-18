@@ -16,7 +16,7 @@ public class ExecutorServiceConfig {
 
     @Bean
     public ExecutorService executorService() {
-        int corePoolSize = Runtime.getRuntime().availableProcessors(); //核心线程数量
+        int corePoolSize = Runtime.getRuntime().availableProcessors() << 1 + 2; //核心线程数量
         int maximumPoolSize = corePoolSize << 1; //最大线程数量
         int queueCapacity = 200; //缓冲队列大小
         int keepAliveTime = 60; //允许线程空闲时间
